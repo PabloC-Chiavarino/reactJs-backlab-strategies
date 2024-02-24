@@ -1,0 +1,67 @@
+.stats-cards-section {
+  margin-top: 7%;
+  text-align: center;
+}
+
+.stats-subtitle {
+  text-align: center;
+  font-weight: bold;
+  font-size: 2.5rem;
+  font-family: 'Montserrat';
+  margin-top: 8%;
+  color: #6315FF;
+}
+
+.stats-text {
+  font-family: 'Montserrat';
+  font-size: 1.5rem;
+  text-align: center;
+  margin-top: 2%;
+  line-height: 2.5rem;
+}
+
+.stats-cards-container {
+  display: flex;
+  justify-content: center;
+  gap: 3.5rem;
+  margin-top: 7%;
+}
+
+.stat-card {
+  position: relative;
+  width: 544px;
+  height: 408px;
+  background-color: #fff;
+  border-radius: 10px;
+  border: 1px solid grey;
+  transition: 0.1s ease-in-out;
+  &:hover{
+    border: solid 3.5px transparent;
+    border-radius: 12px;
+    background-image:
+    linear-gradient(#fff, #fff),
+    linear-gradient(to right, #01E481, #6315FF);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+  }
+}
+
+.stat-card img {
+  width: 100%;
+  height: 50%
+}
+
+.stat-card-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  position: relative;
+  bottom: 2.5rem;
+}
+
+.stat-card-text {
+  color: #858585;
+  line-height: 1.8rem;
+  position: relative;
+  bottom: 5.5rem;
+  font-weight: 500;
+}

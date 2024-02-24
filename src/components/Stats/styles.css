@@ -1,0 +1,63 @@
+.section-estadisticas {
+  background-color: #F7F4FE;
+  margin-bottom: 170px;
+}
+
+.title-estadisticas {
+  font-family: 'Montserrat';
+  margin-top: 0%;
+  font-size: 3.5rem;
+  text-align: center;
+  font-weight: 900;
+}
+
+.p-estadisticas {
+  font-family: 'Montserrat';
+  font-size: 1.5rem;
+  text-align: center;
+  margin-top: 2%;
+  line-height: 2.5rem;
+}
+
+.estadisticas-container {
+  display: grid;
+  grid-template-columns: repeat(3, 350px);
+  row-gap: 1.5rem;
+  column-gap: 4.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 5%;
+  margin-left: 2.5%
+}
+
+.estadistica {
+  width: 380px;
+  height: 200px;
+  text-align: start;
+  position: relative;
+  transition: 0.2s;
+  &:hover{
+    color: #6315FF;
+  }
+}
+
+.estadistica-description {
+  margin-top: 5%;
+  line-height: 1.8rem;
+  color: #858585;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.estadistica-main-description {
+  color: #6315FF;
+}
+
+.subtitle-estadisticas {
+  text-align: center;
+  font-weight: bold;
+  font-size: 2.5rem;
+  font-family: 'Montserrat';
+  margin-top: 8%;
+  color: #6315FF;
+}

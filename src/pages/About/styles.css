@@ -1,0 +1,130 @@
+section {
+    font-family: Montserrat;
+    color: #252B42;
+}
+
+.title-container {
+    text-align: center;
+    width: 100%;
+    position: absolute;
+}
+
+.cards {
+    width: 100%;
+    height: 380px;
+    display: flex;
+    justify-content: center;
+    gap: 2.5rem;
+    position: relative;
+    margin-top: 12%;
+}
+
+.about-card {
+    width: 550px;
+    height: 360px;
+    text-align: center;
+}
+
+.about-card-text {
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 0 2.5rem 2.5rem;
+    line-height: 1.8rem;
+    text-align: center;
+    margin-top: 5%;
+}
+
+.gradient-border-about {
+    border: solid 3.5px transparent;
+    border-radius: 12px;
+    background-image: linear-gradient(#fff, #fff), linear-gradient(to left, #01E481, #6315FF);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+}
+
+.titleInfo-about-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    height: 100px;
+    margin-top: 75px;
+    margin-bottom: 90px;
+}
+
+.subtitle-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.title .info {
+    font-weight: 700;
+    line-height: 57px;
+    letter-spacing: 0.2px;
+}
+
+.title {
+    font-size: 36px;
+}
+
+.info {
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 36px;
+    letter-spacing: 0.1px;
+    margin-top: 5px;
+}
+
+.teamImg {
+    margin-top: -30px;
+    margin-bottom: -5px;
+    width: 100%;
+    height: 475px;
+}
+
+.team-container {
+    height: 1440px;
+    width: 100%;
+    background-image: url(../../assets/img/about-bg.png);
+    display: flex;
+    flex-direction: column;
+    gap: 3.5rem;
+    align-items: center;
+}
+
+.team {
+    width: 1014px;
+    height: 450px;
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+    background-color: #fff;
+    box-shadow: #a7a7a7 0px 5px 3px -1px;
+    border-radius: 1rem;
+    position: relative;
+    top: 11rem;
+}
+
+.team-data {
+    display: flex;
+    flex-direction: column;
+    height: 370px;
+    width: 425px;
+    margin-left: 3.5rem;
+    color: #858585;
+    font-size: 1.5rem;
+    gap: 1rem;
+}
+
+.team-detail {
+    margin-top: 1rem;
+    line-height: 1.5rem;
+    font-size: 1.1rem;
+}
+
+.team-name {
+    color: #252b42;
+    margin-top: 0;
+}

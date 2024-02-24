@@ -1,0 +1,136 @@
+.section-services {
+  margin-bottom: 57px;
+  min-height: 100vh;
+  text-align: center;
+}
+
+.title-services {
+  font-family: 'Montserrat';
+  margin-top: 5%;
+  margin-bottom: 3%;
+  font-size: 3.5rem;
+  font-weight: 800;
+}
+
+.p-services {
+  font-family: 'Montserrat';
+  font-size: 1.5rem;
+  width: 100%;
+  text-align: center;
+  margin-top: -1rem;
+  line-height: 2.5rem;
+}
+
+.services-container {
+  display: grid;
+  grid-template-columns: repeat(3, 350px);
+  row-gap: 1.5rem;
+  column-gap: 3rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 3.5%;
+}
+
+.service {
+  width: 350px;
+  height: 200px;
+  padding: 20px;
+  text-align: start;
+  position: relative;
+  transition: 0.2s;
+
+  &:hover {
+    color: #6315FF;
+  }
+}
+
+.service p {
+  margin-top: 5%;
+  line-height: 1.8rem;
+  color: #858585;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.subtitle-services {
+  font-family: 'Montserrat';
+  text-align: center;
+  font-weight: bold;
+  font-size: 2.5rem;
+  margin-top: 8%;
+}
+
+.services-banner-container {
+  margin-top: 9rem;
+  display: flex;
+  justify-content: center;
+}
+
+.services-banner-bg {
+  position: absolute;
+  width: 100dvw;
+}
+
+.services-banner-vector {
+  position: absolute;
+  width: 100dvw;
+}
+
+.services-arrow-vector {
+  position: absolute;
+  right: -8px;
+  margin-top: 11.5rem;
+}
+
+.services-banner-subcontainer {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+  z-index: 1;
+  margin-top: 2.5%;
+  height: 100%;
+}
+
+.services-banner-text {
+  color: #fff;
+  font-size: 3.5rem;
+  font-weight: 800;
+  line-height: 5rem;
+}
+
+.backtesting-container {
+  display: grid;
+  grid-template-columns: repeat(3, 350px);
+  row-gap: 1.5rem;
+  column-gap: 3rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 3%;
+}
+
+.backtesting-info {
+  width: 380px;
+  height: 200px;
+  text-align: start;
+  position: relative;
+  transition: 0.2s;
+  padding: 20px;
+  
+  &:hover{
+    color: #6315FF;
+  }
+}
+
+.backtesting-description {
+  margin-top: 5%;
+  line-height: 1.8rem;
+  color: #858585;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.backtesting-main-description {
+  color: #6315FF;
+}
