@@ -1,5 +1,6 @@
 import { test, facebookFooter, instagramFooter, linkedinFooter, xFooter } from '../../assets/icons'
 import './styles.css';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
     return (
@@ -10,9 +11,11 @@ const Footer = () => {
                         <img src={test} alt="icono regalo" className='icono-regalo' />
                         <h2>¡Prueba <br />Gratis!</h2>
                         <p className="p-prueba">Contáctate con nosotros para realizar <br />una prueba gratis de nuestro servicio</p>
-                        <button>
-                            <a href="#" target='blank'>¡Probar Ahora!</a>
+                        <Link to="/contact">
+                            <button>
+                            ¡Probar Ahora!
                         </button>
+                        </Link>
                     </div>
                 </div>
             </div>
