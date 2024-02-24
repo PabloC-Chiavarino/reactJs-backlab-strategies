@@ -1,6 +1,8 @@
 import { MainCards, Security } from '../../components/index.js'
 import { screensHome, backLabVector1, bannerBg1 } from '../../assets/img/index.js';
 import './styles.css';
+import { Link } from 'react-router-dom';
+
 
 const Home = () => {
     return (
@@ -10,7 +12,9 @@ const Home = () => {
                     <h1 className="home-title">Descubre el poder<br /> del Trading</h1>
                     <p className="home-subtitle">Tu puerta de entrada al<br /> éxito financiero. </p>
                     <div className="button-container">
-                        <button className="green-button">CONSULTANOS</button>
+                        <Link to="/Contact">
+                            <button className="green-button">CONSULTANOS</button>
+                        </Link>
                         <button style={{ color: '#01e481', backgroundColor: 'transparent', border: 'solid 1px #01e481', padding: '9px' }} className="green-button">AGENDÁ UN TURNO</button>
                     </div>
                 </div>
@@ -41,7 +45,10 @@ const Home = () => {
                                     con Estrategia
                                 </h4>
                             </div>
-                            <button className='blue-button'>CONSULTANOS</button>
+                            <Link to="/Contact">
+                                <button className='blue-button'>CONSULTANOS</button>
+                            </Link>
+
                         </div>
                         <img className='banner-bg' src={bannerBg1} alt="" />
                         <img className='lineal-vector' src={backLabVector1} alt="" />
