@@ -23,6 +23,7 @@
 }
 
 details {
+    cursor: pointer;
     padding-inline-end: 3rem;
     text-align: left;
     padding-left: 0.5rem;
