@@ -1,3 +1,4 @@
+import { PopupButton } from "react-calendly"
 import { MainCards, Security } from '../../components/index.js'
 import { screensHome, backLabVector1, bannerBg1 } from '../../assets/img/index.js';
 import './styles.css';
@@ -15,9 +16,13 @@ const Home = () => {
                         <Link to="/Contact">
                             <button className="green-button">CONSULTANOS</button>
                         </Link>
-                        <Link to="https://calendly.com/backlab-strategies" target='blank'>
-                        <button style={{ color: '#01e481', backgroundColor: 'transparent', border: 'solid 1px #01e481', padding: '9px' }} className="green-button">AGENDÁ UN TURNO</button>
-                        </Link>
+                        <PopupButton
+                            className="green-button"
+                            styles={{ color: '#01e481', backgroundColor: 'transparent', border: 'solid 1px #01e481', padding: '9px' }}
+                            url="https://calendly.com/backlab-strategies"
+                            rootElement={document.getElementById("root")}
+                            text="AGENDÁ UN TURNO"
+                        />
                     </div>
                 </div>
                 <div>
