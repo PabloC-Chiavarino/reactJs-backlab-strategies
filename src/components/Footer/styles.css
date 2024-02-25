@@ -87,6 +87,8 @@
 
     &:hover {
         cursor: pointer;
+        background-color: #303030;
+        color: #01E481;
     }
 }
 
@@ -125,25 +127,26 @@
     top: 2px;
 }
 
-@media ( 1200px <= width <= 1365px ) {
-    
-    .section-footer .rectangulo{
+@media (1200px <=width <=1365px) {
+
+    .section-footer .rectangulo {
         width: 87%;
     }
 
-    .section-footer .contenido{
+    .section-footer .contenido {
         gap: 1.5rem;
     }
 }
 
-@media ( min-width: 1901px ) {
+@media (min-width: 1901px) {
     .section-footer .icono-regalo {
         width: 150px;
         margin-right: 20px;
         gap: 1.5rem;
     }
+
     .section-footer .contenido {
-        gap:4rem;
+        gap: 4rem;
     }
 
     .section-footer .p-prueba {

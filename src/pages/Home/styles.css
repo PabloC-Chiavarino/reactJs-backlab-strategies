@@ -54,6 +54,64 @@
     width: 216px;
     font-family: Montserrat;
     font-size: 1rem;
+
+    &:hover {
+        background-color: #303030;
+        color: #01E481;
+    }
+}
+
+.green-button-calendly {
+    border: none;
+    border-radius: 3rem;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: bold;
+    height: 47px;
+    width: 216px;
+    font-family: Montserrat;
+    font-size: 1rem;
+    position: relative;
+    overflow: hidden;
+    color: #01e481;
+    border: solid 1px #01e481;
+    padding: 9px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 100%;
+        background-color: #01e481;
+        z-index: -1;
+        transition: width 2s ease;
+    }
+
+    &:hover {
+        color: #000;
+        background-color: #01e481;
+
+        &::before {
+            width: 100%;
+        }
+    }
+
+    &:active {
+        transform: scale(0.99);
+    }
+}
+
+@keyframes fillButton {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 100%;
+    }
 }
 
 .blue-button {
@@ -69,6 +127,10 @@
     font-family: Montserrat;
     font-size: 1rem;
     margin-top: 2.5rem;
+    
+    &:hover {
+        color: #01E481;
+    }
 }
 
 .home-cards-section {
@@ -138,7 +200,7 @@
     font-size: 1.5rem;
 }
 
-@media ( min-width: 1600px ) and ( max-width: 1900px ) {
+@media (min-width: 1600px) and (max-width: 1900px) {
     .section-home {
         min-height: 50rem;
         background-size: cover;
@@ -146,7 +208,7 @@
     }
 }
 
-@media ( min-width: 1901px ) {
+@media (min-width: 1901px) {
     .section-home {
         background-position-y: -18rem;
         background-size: cover;

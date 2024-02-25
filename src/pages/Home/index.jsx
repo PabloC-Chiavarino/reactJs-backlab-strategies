@@ -17,12 +17,13 @@ const Home = () => {
                             <button className="green-button">CONSULTANOS</button>
                         </Link>
                         <PopupButton
-                            className="green-button"
-                            styles={{ color: '#01e481', backgroundColor: 'transparent', border: 'solid 1px #01e481', padding: '9px' }}
+                            className="green-button-calendly"
+                            styles={{ backgroundColor: 'transparent', border: 'solid 1px #01e481', padding: '9px' }}
                             url="https://calendly.com/backlab-strategies"
                             rootElement={document.getElementById("root")}
                             text="AGENDÁ UN TURNO"
                         />
+
                     </div>
                 </div>
                 <div>
