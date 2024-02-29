@@ -11,7 +11,7 @@ const About = () => {
                 <div className="cards">
                     <div className="about-card gradient-border-about">
                         <h3 style={{ marginTop: '9%', fontSize: '1.5rem', fontWeight: '800' }}>Nuestra Misión</h3>
-                        <p className='about-card-text' style={{ marginTop: '10%' }}>
+                        <p className='about-card-text'>
                             En Backlabs Strategies, nos dedicamos a redefinir
                             el mundo del trading al fusionar la potencia de la
                             personalización con la ciencia de las inversiones.<br />
