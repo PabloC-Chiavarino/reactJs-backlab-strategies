@@ -1,6 +1,6 @@
 import { PopupButton } from "react-calendly"
 import { MainCards, Security } from '../../components/index.js'
-import { screensHome, backLabVector1, bannerBg1 } from '../../assets/img/index.js';
+import { screensHome } from '../../assets/img/index.js';
 import './styles.css';
 import { Link } from 'react-router-dom';
 
@@ -38,7 +38,7 @@ const Home = () => {
                     <MainCards />
                     <div className="banner-container">
                         <div className="banner-subcontainer">
-                            <h3 style={{ fontSize: '3rem', fontWeight: '400', color: '#6315FF' }}>Back
+                            <h3 className='banner-title'>Back
                                 <strong style={{ fontWeight: '600' }}>Lab</strong>
                                 <br />
                                 Strategies
@@ -58,8 +58,7 @@ const Home = () => {
                             </Link>
 
                         </div>
-                        <img className='banner-bg' src={bannerBg1} alt="" />
-                        <img className='lineal-vector' src={backLabVector1} alt="" />
+                        <div className='lineal-vector' alt="" />
                     </div>
                 </div>
                 <Security />

@@ -1,4 +1,4 @@
-import { test, facebookFooter, instagramFooter, linkedinFooter, xFooter } from '../../assets/icons'
+import { test, facebookFooter, instagramFooter, linkedinFooter, xFooter, arrowIco } from '../../assets/icons'
 import './styles.css';
 import { Link } from 'react-router-dom';
 
@@ -13,8 +13,8 @@ const Footer = () => {
                         <p className="p-prueba">Contáctate con nosotros para realizar <br />una prueba gratis de nuestro servicio</p>
                         <Link to="/contact">
                             <button>
-                            ¡Probar Ahora!
-                        </button>
+                                <img src={arrowIco} />
+                            </button>
                         </Link>
                     </div>
                 </div>
