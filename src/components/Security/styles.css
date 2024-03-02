@@ -1,3 +1,24 @@
+@keyframes fade {
+    15%{
+        background-image: url(../../assets/img/seguridad1.svg);
+    }
+    25%{
+        background-image: url(../../assets/img/seguridad2.svg);
+    }
+    50%{
+        background-image: url(../../assets/img/seguridad2.svg);
+    }
+    60%{
+        background-image: url(../../assets/img/seguridad3.svg);
+    }
+    85%{
+        background-image: url(../../assets/img/seguridad3.svg);
+    }
+    95%{
+        background-image: url(../../assets/img/seguridad1.svg);
+    }
+}
+
 .security-section {
     margin-bottom: 13%;
     margin-top: 12%;
@@ -29,13 +50,36 @@
     gap: 1.5rem;
 }
 
-.security-img {
-    width: 498px;
-    height: 680px;
+.security-img-container {
+    background-image: url(../../assets/img/seguridad1.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    animation: fade 25s infinite;
+    width: 525px;
+    height: 700px;
 }
 
 .chars-container {
     width: 632px;
+    gap: 36px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 0.5rem;
+}
+
+.checkIcon {
+    background-image: url(../../assets/icons/checkIco.png);
+    background-size: cover;
+    transition: 0.3s;
+    width: 24px;
+    height: 24px;
+    margin: 0 0.5rem 0 0.5rem;
+}
+
+.char:hover {
+    .checkIcon {
+        background-image: url(../../assets/icons/checkIco-green.png); 
+    }
 }
 
 .char-title-container {

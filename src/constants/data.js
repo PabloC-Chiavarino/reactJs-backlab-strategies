@@ -1,4 +1,4 @@
-import { historyIco, exchangesIco, flexIco, parametersIco, analysisIco, backtestMultiIco, realTestIco, intuitiveFrontIco, riskAdmIco, exclusiveWebIco, checkIco } from "../assets/icons"
+import { historyIco, exchangesIco, flexIco, parametersIco, analysisIco, backtestMultiIco, realTestIco, intuitiveFrontIco, riskAdmIco, exclusiveWebIco } from "../assets/icons"
 
 export const mainCardsData = [
   {
@@ -55,22 +55,18 @@ export const mainCardsData = [
 
 export const securityData = [
   {
-    icon: checkIco,
     title: 'Protocolo de seguridad avanzado',
     description: 'Utilizamos tecnologías de seguridad de vanguardia para garantizar la integridad y confidencialidad de tus datos. Nustros protocolos de encriptación de extremo a extremo protegen tus transacciones y cualquier información personal que nos confíes.'
   },
   {
-    icon: checkIco,
     title: 'Control total en tus manos',
     description: 'Te brindamos herramientas para gestionar y controla quién accede a tu información, dándote la capacidad de personalizar tu experiencia según tus preferencias de privacidad.'
   },
   {
-    icon: checkIco,
     title: 'Compromiso contra el acceso no autorizado',
     description: 'Nuestro equipo de expertos en seguridad trabaja incansablemnte para prevenir cualquier acceso no autorizado a tu cuenta. Implementamos medidas proactivas para detectar y mitigar posibles amenazas, garantizando un ambiente seguro y confiable para tus actividades financieras.'
   },
   {
-    icon: checkIco,
     title: 'Tu confianza es nuestra prioridad',
     description: 'Entendemos que la confianza es la base de cualqueir relación exitosa en el mundo financiero. Queremos que operes con total confianza, sabiendo que tus datos están protegidos con los más altos estándares de seguridad.'
   }

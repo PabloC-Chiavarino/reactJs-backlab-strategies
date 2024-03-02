@@ -1,5 +1,4 @@
 import { securityData } from '../../constants/data';
-import { security } from '../../assets/img'
 import './styles.css';
 
 const Security = () => {
@@ -15,13 +14,13 @@ const Security = () => {
                 con los más altos estándares de seguridad de la industria financiera.
             </p>
             <div className="security-subcontainer">
-                <img className='security-img' src={security} alt="" />
+                <div className='security-img-container security-img' alt="" />
                 <div className="chars-container">
                     {securityData.map((data, index) => {
                         return (
                             <div key={index} className="char">
                                 <span className='char-title-container'>
-                                    <img src={data.icon} alt="" />
+                                    <div className='checkIcon' alt="" />
                                     <h4 className='char-title'>{data.title}</h4>
                                 </span>
                                 <p className='char-description'>{data.description}</p>
