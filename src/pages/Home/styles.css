@@ -1,3 +1,7 @@
+main {
+    min-height: 100dvh;
+}
+
 .section-home {
     display: flex;
     overflow: hidden;
