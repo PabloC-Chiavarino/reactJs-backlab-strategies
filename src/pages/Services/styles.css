@@ -1,3 +1,7 @@
+html {
+  overflow: clip visible;
+}
+
 .section-services {
   margin-bottom: 57px;
   min-height: 100vh;
