@@ -8,16 +8,157 @@ html {
   text-align: center;
 }
 
+.section-services article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .title-services {
-  font-family: 'Montserrat';
+  font-family: 'Montserrat', sans-serif;
   margin-top: 5%;
   margin-bottom: 3%;
   font-size: 3.5rem;
   font-weight: 800;
 }
 
+.backtesting-banner-container {
+  width: 1156px;
+  height: 560px;
+  margin-top: 8rem;
+  box-shadow: #a7a7a7 0px 5px 3px -1px;
+  border-radius: 10px;
+  background-image: url(../../assets/img/note-banner.png);
+  background-size: 100%;
+  transition: 0.5s;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+
+  &::before {
+    content: '';
+    background-image: url(/src/assets/img/degrade-banner.svg);
+    background-size: 100%;
+    height: 560px;
+    width: 1156px;
+    display: flex;
+    border-radius: 10px;
+    position: absolute;
+  }
+
+  &::after {
+    content: url(/src/assets/img/services-banner-logo.svg);
+    z-index: 1;
+    display: flex;
+    justify-content: start;
+    position: relative;
+    bottom: 28rem;
+    right: -100%;
+    width: fit-content;
+    transition: 0.5s ease-out;
+    opacity: 0;
+  }
+
+  &:hover {
+    background-size: 105%;
+
+    .backtesting-banner-button {
+      right: -40%;
+      opacity: 1;
+    }
+
+    &::before {
+      background-size: 105%;
+    }
+
+    &::after {
+      right: -90%;
+      opacity: 1;
+    }
+  }
+}
+
+.backtesting-banner-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  background-color: #01E481;
+  color: #000;
+  border: none;
+  border-radius: 24px;
+  cursor: pointer;
+  font-size: 1rem;
+  width: 38rem;
+  height: 45px;
+  font-family: 'Montserrat', sans-serif;
+  transition: 0.75s ease-out;
+  font-weight: bold;
+  z-index: 1;
+  position: relative;
+  right: -100%;
+  opacity: 0;
+
+  &::before {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    background-image: url(../../src/assets/icons/whatsapp.png);
+    width: 28px;
+    height: 28px;
+    background-size: 28px;
+    left: 3rem;
+    opacity: 0;
+    transition: 0.3s;
+  }
+
+  &:hover{
+    transition: 0.5s;
+    cursor: pointer;
+    padding-left: 65px;
+    background-color: #303030;
+    color:#01E481;
+    opacity: 1;
+
+    &::before{
+      opacity: 1;
+    }
+  }
+}
+
+
+.backtesting-banner-text {
+  width: 502px;
+  height: 428px;
+  text-align: start;
+  z-index: 1;
+  margin-left: 4.5rem;
+  margin-top: 1rem;
+}
+
+.backtesting-banner-text h3 {
+  font-size: 2.5rem;
+  color: #01e481;
+  margin-bottom: 10px;
+}
+
+.backtesting-banner-text h4 {
+  line-height: 2.3rem;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #fff;
+}
+
+.backtesting-banner-text p {
+  text-align: justify;
+  line-height: 1.8rem;
+  font-weight: 500;
+  color: #fff;
+}
+
+
 .p-services {
-  font-family: 'Montserrat';
+  font-family: 'Montserrat', sans-serif;
   font-size: 1.5rem;
   width: 100%;
   text-align: center;
@@ -41,7 +182,7 @@ html {
   padding: 20px;
   text-align: start;
   position: relative;
-  transition: 0.2s;
+  transition: 0.5s;
 
   &:hover {
     color: #6315FF;
@@ -57,7 +198,7 @@ html {
 }
 
 .subtitle-services {
-  font-family: 'Montserrat';
+  font-family: 'Montserrat', sans-serif;
   text-align: center;
   font-weight: bold;
   font-size: 2.5rem;
@@ -119,10 +260,10 @@ html {
   height: 200px;
   text-align: start;
   position: relative;
-  transition: 0.2s;
+  transition: 0.5s;
   padding: 20px;
-  
-  &:hover{
+
+  &:hover {
     color: #6315FF;
   }
 }

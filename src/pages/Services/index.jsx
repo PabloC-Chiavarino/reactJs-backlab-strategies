@@ -1,10 +1,13 @@
+import { useId } from 'react'
 import { servicesData, backtestingData, automationData } from '../../constants/data.js'
 import { ParamsCards, Objetives, Stats, StatsCards } from '../../components/index.js'
-import { servicesBanner1, servicesBanner2, bannerBg2, backLabVector2, backLabVectorRight } from '../../assets/img/index.js'
+import { servicesBanner2, bannerBg2, backLabVector2, backLabVectorRight } from '../../assets/img/index.js'
 import { Link } from 'react-router-dom';
 import './styles.css'
 
 const Services = () => {
+
+  const id = useId()
 
   return (
     <section className='section-services'>
@@ -13,14 +16,33 @@ const Services = () => {
         <span style={{ fontSize: '1.5rem', fontWeight: '700' }}>¡Conocé el plan que mejor se adapte a lo que necesitás!</span>
         <p style={{ marginTop: '3rem' }} className='p-services'>Te ofrecemos nuestros dos planes, Backtesting y Automatización de Estrategias.<br />
           Te invitamos a que leas cual es el que se adecua a tus necesidades.</p>
-        <img style={{ marginTop: '8rem', boxShadow: '#a7a7a7 0px 5px 3px -1px', borderRadius: '10px' }} src={servicesBanner1} alt="" />
+        <div className='backtesting-banner-container' alt="" >
+          <div className="backtesting-banner-text">
+            <h3>Backtesting</h3>
+            <h4>
+              ¡Descubre el poder del backtesting<br />
+              para llevar tu trading al siguiente nivel!
+            </h4>
+            <p>Prueba y optimiza tus estrategias antes de<br />
+              aplicarlas en el mercado real, asegurando un<br />
+              rendimiento óptimo y minimizando riesgos
+              <br />
+              <br />
+              Con datos históricos y análisis detallados,<br />
+              toma decisiones informadas y maximiza<br />
+              tu potencial de ganancias.</p>
+          </div>
+          <a className='backtesting-banner-button' href="https://wa.me/5492281300940" target="_blank" rel="noopener noreferrer">
+            ¡CONSULTANOS PARA CONOCER NUESTRAS OFERTAS!
+          </a>
+        </div>
         <h2 className="subtitle-services">¿Cómo funciona el Backtesting?</h2>
         <div className="backtesting-container">
 
-          {backtestingData.map((data, index) => {
+          {backtestingData.map((data) => {
 
             return (
-              <div key={index} className='backtesting-info'>
+              <div key={id} className='backtesting-info'>
                 <h3 style={{ fontSize: '1rem', marginBottom: '5%' }}>{data.title}</h3>
                 <span className='backtesting-description backtesting-main-description'>{data.mainDescription}</span>
                 <span className='backtesting-description'>{data.description}</span>
@@ -35,10 +57,10 @@ const Services = () => {
         <h2 className="subtitle-services">¿Cómo funciona la automatización de Estrategia?</h2>
         <div className="backtesting-container">
 
-          {automationData.map((data, index) => {
+          {automationData.map((data) => {
 
             return (
-              <div key={index} className='backtesting-info'>
+              <div key={id} className='backtesting-info'>
                 <h3 style={{ fontSize: '1rem', marginBottom: '5%' }}>{data.title}</h3>
                 <span className='backtesting-description'>{data.description}</span>
               </div>
@@ -65,10 +87,10 @@ const Services = () => {
         <span><h2 className="subtitle-services">Parámetros por Default</h2></span>
         <div className="services-container">
 
-          {servicesData.map((data, index) => {
+          {servicesData.map((data) => {
 
             return (
-              <div key={index} className='service'>
+              <div key={id} className='service'>
                 <h3 style={{ fontSize: '1rem' }}>{data.title}</h3>
                 <p>{data.description}</p>
               </div>

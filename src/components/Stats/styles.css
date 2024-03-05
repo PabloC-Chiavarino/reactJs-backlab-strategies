@@ -4,7 +4,7 @@
 }
 
 .title-estadisticas {
-  font-family: 'Montserrat';
+  font-family: 'Montserrat', sans-serif;
   margin-top: 0%;
   font-size: 3.5rem;
   text-align: center;
@@ -12,7 +12,7 @@
 }
 
 .p-estadisticas {
-  font-family: 'Montserrat';
+  font-family: 'Montserrat', sans-serif;
   font-size: 1.5rem;
   text-align: center;
   margin-top: 2%;
@@ -35,8 +35,9 @@
   height: 200px;
   text-align: start;
   position: relative;
-  transition: 0.2s;
-  &:hover{
+  transition: 0.5s;
+
+  &:hover {
     color: #6315FF;
   }
 }
@@ -57,7 +58,7 @@
   text-align: center;
   font-weight: bold;
   font-size: 2.5rem;
-  font-family: 'Montserrat';
+  font-family: 'Montserrat', sans-serif;
   margin-top: 8%;
   color: #6315FF;
 }

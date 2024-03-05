@@ -9,6 +9,8 @@ const ScrollToTop = () => {
         window.scrollTo(0, 0)
     }, [pathname]
     )
+
+    return false
 }
 
 export default ScrollToTop
