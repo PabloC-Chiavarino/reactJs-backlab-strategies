@@ -13,7 +13,7 @@ const Footer = () => {
                         <p className="p-prueba">Contáctate con nosotros para realizar <br />una prueba gratis de nuestro servicio</p>
                         <Link to="/contact">
                             <button>
-                                <img src={arrowIco} />
+                                <img src={arrowIco} alt='' />
                             </button>
                         </Link>
                     </div>

@@ -8,7 +8,7 @@
     text-align: center;
     z-index: 2;
     padding-bottom: 7%;
-    font-family: Montserrat;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .section-footer .contenedor {
@@ -21,7 +21,6 @@
 }
 
 .section-footer .rectangulo {
-    height: 200px;
     transform: translate(0, -40%);
     z-index: 3;
     display: flex;
@@ -85,10 +84,9 @@
     font-size: 1rem;
     width: 215px;
     height: 45px;
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
     transition: 0.5s;
     font-weight: bold;
-    transition: 0.5s;
 
     &::after {
         content: 'Probar Ahora!';
@@ -111,7 +109,6 @@
 .section-footer button img {
     position: relative;
     left: -7px;
-
 }
 
 .section-footer .redes-sociales a {
