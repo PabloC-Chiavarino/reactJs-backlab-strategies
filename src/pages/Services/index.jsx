@@ -1,7 +1,7 @@
 import { useId } from 'react'
 import { servicesData, backtestingData, automationData } from '../../constants/data.js'
 import { ParamsCards, Objetives, Stats, StatsCards } from '../../components/index.js'
-import { servicesBanner2, bannerBg2, backLabVector2, backLabVectorRight } from '../../assets/img/index.js'
+import { bannerBg2, backLabVector2, backLabVectorRight } from '../../assets/img/index.js'
 import { Link } from 'react-router-dom';
 import './styles.css'
 
@@ -16,6 +16,7 @@ const Services = () => {
         <span style={{ fontSize: '1.5rem', fontWeight: '700' }}>¡Conocé el plan que mejor se adapte a lo que necesitás!</span>
         <p style={{ marginTop: '3rem' }} className='p-services'>Te ofrecemos nuestros dos planes, Backtesting y Automatización de Estrategias.<br />
           Te invitamos a que leas cual es el que se adecua a tus necesidades.</p>
+
         <div className='backtesting-banner-container' alt="" >
           <div className="backtesting-banner-text">
             <h3>Backtesting</h3>
@@ -51,7 +52,23 @@ const Services = () => {
           })}
 
         </div>
-        <img style={{ marginTop: '11rem' }} src={servicesBanner2} alt="" />
+
+        <div className='automation-banner-container' alt="" >
+          <div className="backtesting-banner-text">
+            <h3 style={{ color: '#6315ff' }}>Automatización<br />de Estrategia</h3>
+            <h4 style={{ color: '#333d60' }}>
+              ¡Haz que tu trading sea más<br />
+              fácil y rentable hoy mismo!
+            </h4>
+            <p style={{ color: '#252b42' }}>Implementa estrategias previamente<br />
+              probadas y optimizadas con confianza,<br />
+              sabiendo que estás tomando decisiones<br />
+              informadas y eficientes en tiempo real. </p>
+          </div>
+          <a className='backtesting-banner-button' href="https://wa.me/5492281300940" target="_blank" rel="noopener noreferrer">
+            ¡CONSULTANOS PARA CONOCER NUESTRAS OFERTAS!
+          </a>
+        </div>
       </article>
       <article>
         <h2 className="subtitle-services">¿Cómo funciona la automatización de Estrategia?</h2>

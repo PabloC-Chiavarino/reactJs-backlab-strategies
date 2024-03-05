@@ -23,13 +23,38 @@ html {
 }
 
 .backtesting-banner-container {
+  background-image: url(../../assets/img/note-banner.png);
+
+  &::before {
+    background-image: url(/src/assets/img/degrade-banner.svg);
+    background-repeat: no-repeat;
+  }
+}
+
+.automation-banner-container {
+  background-image: url(../../assets/img/smartphone-banner.jpg);
+  background-size: 110% !important;
+  &:hover{
+    background-size: 115% !important;
+  }
+
+  &::before {
+    background-image: url(/src/assets/img/degrade-banner-green.svg);
+    background-repeat: no-repeat;
+  }
+}
+
+
+
+.automation-banner-container,
+.backtesting-banner-container {
   width: 1156px;
   height: 560px;
   margin-top: 8rem;
   box-shadow: #a7a7a7 0px 5px 3px -1px;
   border-radius: 10px;
-  background-image: url(../../assets/img/note-banner.png);
   background-size: 100%;
+  background-repeat: no-repeat;
   transition: 0.5s;
   display: flex;
   flex-direction: column;
@@ -37,8 +62,7 @@ html {
 
   &::before {
     content: '';
-    background-image: url(/src/assets/img/degrade-banner.svg);
-    background-size: 100%;
+    background-size: 110%;
     height: 560px;
     width: 1156px;
     display: flex;
@@ -59,6 +83,8 @@ html {
     opacity: 0;
   }
 
+
+
   &:hover {
     background-size: 105%;
 
@@ -68,7 +94,7 @@ html {
     }
 
     &::before {
-      background-size: 105%;
+      background-size: 110%;
     }
 
     &::after {
@@ -76,7 +102,12 @@ html {
       opacity: 1;
     }
   }
+
+
+
 }
+
+
 
 .backtesting-banner-button {
   display: inline-flex;
@@ -112,15 +143,15 @@ html {
     transition: 0.3s;
   }
 
-  &:hover{
+  &:hover {
     transition: 0.5s;
     cursor: pointer;
     padding-left: 65px;
     background-color: #303030;
-    color:#01E481;
+    color: #01E481;
     opacity: 1;
 
-    &::before{
+    &::before {
       opacity: 1;
     }
   }
