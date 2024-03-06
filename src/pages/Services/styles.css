@@ -22,7 +22,7 @@ html {
   font-weight: 800;
 }
 
-.backtesting-banner-container {
+.primary-banner-container {
   background-image: url(../../assets/img/note-banner.png);
 
   &::before {
@@ -34,7 +34,8 @@ html {
 .automation-banner-container {
   background-image: url(../../assets/img/smartphone-banner.jpg);
   background-size: 110% !important;
-  &:hover{
+
+  &:hover {
     background-size: 115% !important;
   }
 
@@ -47,7 +48,7 @@ html {
 
 
 .automation-banner-container,
-.backtesting-banner-container {
+.primary-banner-container {
   width: 1156px;
   height: 560px;
   margin-top: 8rem;
@@ -88,7 +89,7 @@ html {
   &:hover {
     background-size: 105%;
 
-    .backtesting-banner-button {
+    .primary-banner-button {
       right: -40%;
       opacity: 1;
     }
@@ -109,7 +110,7 @@ html {
 
 
 
-.backtesting-banner-button {
+.primary-banner-button {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -158,7 +159,7 @@ html {
 }
 
 
-.backtesting-banner-text {
+.primary-banner-text {
   width: 502px;
   height: 428px;
   text-align: start;
@@ -167,20 +168,20 @@ html {
   margin-top: 1rem;
 }
 
-.backtesting-banner-text h3 {
+.primary-banner-text h3 {
   font-size: 2.5rem;
   color: #01e481;
   margin-bottom: 10px;
 }
 
-.backtesting-banner-text h4 {
+.primary-banner-text h4 {
   line-height: 2.3rem;
   font-size: 1.5rem;
   font-weight: 400;
   color: #fff;
 }
 
-.backtesting-banner-text p {
+.primary-banner-text p {
   text-align: justify;
   line-height: 1.8rem;
   font-weight: 500;
@@ -236,18 +237,18 @@ html {
   margin-top: 8%;
 }
 
-.services-banner-container {
+.secondary-banner-container {
   margin-top: 9rem;
   display: flex;
   justify-content: center;
 }
 
-.services-banner-bg {
+.secondary-banner-bg {
   position: absolute;
   width: 100dvw;
 }
 
-.services-banner-vector {
+.secondary-banner-vector {
   position: absolute;
   width: 100dvw;
 }
@@ -258,7 +259,7 @@ html {
   margin-top: 11.5rem;
 }
 
-.services-banner-subcontainer {
+.secondary-banner-subcontainer {
   position: absolute;
   display: flex;
   flex-direction: column;
@@ -269,11 +270,31 @@ html {
   height: 100%;
 }
 
-.services-banner-text {
+.secondary-banner-text {
   color: #fff;
   font-size: 3.5rem;
   font-weight: 800;
   line-height: 5rem;
+}
+
+.secondary-banner-button {
+  background-color: #01E481;
+  color: #252b42;
+  border: none;
+  border-radius: 3rem;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-weight: bold;
+  height: 47px;
+  width: 216px;
+  font-family: Montserrat, sans-serif;
+  font-size: 1rem;
+  transition: 0.5s;
+
+  &::before{
+    content: '';
+    background-image: url(../../assets/icons/whatsapp.png);
+  }
 }
 
 .backtesting-container {

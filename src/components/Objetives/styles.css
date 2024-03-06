@@ -1,23 +1,60 @@
+@keyframes grow {
+    0% {
+        background-size: 100%;
+    }
+
+    25% {
+        background-size: 125%;
+    }
+
+    50% {
+        background-size: 150%;
+    }
+
+    75% {
+        background-size: 175%;
+    }
+
+    100% {
+        background-size: 200%;
+    }
+
+}
+
 .section-objectivos {
-    background-color: #00060C;
-    background-image: url('/src/assets/img/objective-bg.svg');
-    background-position: right;
+    background-color: #000;
+    background-position: center;
     background-repeat: no-repeat;
     position: relative;
-    text-align: center;
-    height: 51rem;
+    height: 50.5rem;
     margin-top: 12%;
     margin-bottom: -5%;
     background-position-x: 36rem;
+    z-index: 1;
+
+    &::before {
+        content: url(/src/assets/img/degrade-black.svg);
+        z-index: 2;
+        position: relative;
+        left: 17rem;
+    }
+
+    &::after {
+        content: url(/src/assets/img/objective-bg.svg);
+        position: absolute;
+        z-index: 1;
+        right: -8px;
+    }
 }
 
 .title-info-container {
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
     position: absolute;
     color: #ffffff;
     text-align: start;
     margin-left: 8rem;
     top: 15%;
+    z-index: 2;
 }
 
 .title-object {
@@ -34,4 +71,11 @@
 
 .span-object {
     font-weight: 800;
+    font-size: 2.25rem;
+    width: fit-content;
+    display: flex;
+    white-space: nowrap;
+    margin-top: 2rem;
+    color: #01e481;
+    opacity: 1;
 }

@@ -17,8 +17,8 @@ const Services = () => {
         <p style={{ marginTop: '3rem' }} className='p-services'>Te ofrecemos nuestros dos planes, Backtesting y Automatización de Estrategias.<br />
           Te invitamos a que leas cual es el que se adecua a tus necesidades.</p>
 
-        <div className='backtesting-banner-container' alt="" >
-          <div className="backtesting-banner-text">
+        <div className='primary-banner-container' alt="" >
+          <div className="primary-banner-text">
             <h3>Backtesting</h3>
             <h4>
               ¡Descubre el poder del backtesting<br />
@@ -33,7 +33,7 @@ const Services = () => {
               toma decisiones informadas y maximiza<br />
               tu potencial de ganancias.</p>
           </div>
-          <a className='backtesting-banner-button' href="https://wa.me/5492281300940" target="_blank" rel="noopener noreferrer">
+          <a className='primary-banner-button' href="https://wa.me/5492281300940" target="_blank" rel="noopener noreferrer">
             ¡CONSULTANOS PARA CONOCER NUESTRAS OFERTAS!
           </a>
         </div>
@@ -54,7 +54,7 @@ const Services = () => {
         </div>
 
         <div className='automation-banner-container' alt="" >
-          <div className="backtesting-banner-text">
+          <div className="primary-banner-text">
             <h3 style={{ color: '#6315ff' }}>Automatización<br />de Estrategia</h3>
             <h4 style={{ color: '#333d60' }}>
               ¡Haz que tu trading sea más<br />
@@ -65,7 +65,7 @@ const Services = () => {
               sabiendo que estás tomando decisiones<br />
               informadas y eficientes en tiempo real. </p>
           </div>
-          <a className='backtesting-banner-button' href="https://wa.me/5492281300940" target="_blank" rel="noopener noreferrer">
+          <a className='primary-banner-button' href="https://wa.me/5492281300940" target="_blank" rel="noopener noreferrer">
             ¡CONSULTANOS PARA CONOCER NUESTRAS OFERTAS!
           </a>
         </div>
@@ -85,15 +85,15 @@ const Services = () => {
           })}
 
         </div>
-        <div className="services-banner-container">
-          <div className="services-banner-subcontainer">
-            <h3 className='services-banner-text'>Potenciamos<br />tu Estrategia<br />de Trading</h3>
+        <div className="secondary-banner-container">
+          <div className="secondary-banner-subcontainer">
+            <h3 className='secondary-banner-text'>Potenciamos<br />tu Estrategia<br />de Trading</h3>
             <Link to="/Contact">
-              <button className='green-button'>CONSULTANOS</button>
+              <button className='secondary-banner-button'>CONSULTANOS</button>
             </Link>
           </div>
-          <img className='services-banner-bg' src={bannerBg2} alt="" />
-          <img className='services-banner-vector' src={backLabVector2} alt="" />
+          <img className='secondary-banner-bg' src={bannerBg2} alt="" />
+          <img className='secondary-banner-vector' src={backLabVector2} alt="" />
           <img className='services-arrow-vector' src={backLabVectorRight} alt="" />
         </div>
       </article>
