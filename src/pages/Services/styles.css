@@ -134,7 +134,7 @@ html {
     content: '';
     position: absolute;
     z-index: 1;
-    background-image: url(../../src/assets/icons/whatsapp.png);
+    background-image: url(../../assets/icons/whatsapp.png);
     width: 28px;
     height: 28px;
     background-size: 28px;
