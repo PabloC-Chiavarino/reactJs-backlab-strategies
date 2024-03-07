@@ -11,10 +11,10 @@ const Stats = () => {
             </p>
             <h2 className="subtitle-estadisticas">Estadísticas por Default</h2>
             <div className="estadisticas-container">
-                {statsData.map((data, index) => {
+                {statsData.map((data) => {
 
                     return (
-                        <div key={index} className='estadistica'>
+                        <div key={data.title} className='estadistica'>
                             <h3 style={{ fontSize: '1rem', marginBottom: '5%' }}>{data.title}</h3>
                             <span className='estadistica-description'>{data.description}</span>
                             <span className='estadistica-description estadistica-main-description'>{data.mainDescription}</span>

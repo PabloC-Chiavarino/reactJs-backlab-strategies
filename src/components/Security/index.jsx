@@ -16,9 +16,9 @@ const Security = () => {
             <div className="security-subcontainer">
                 <div className='security-img-container security-img' alt="" />
                 <div className="chars-container">
-                    {securityData.map((data, index) => {
+                    {securityData.map((data) => {
                         return (
-                            <div key={index} className="char">
+                            <div key={data.title} className="char">
                                 <span className='char-title-container'>
                                     <div className='checkIcon' alt="" />
                                     <h4 className='char-title'>{data.title}</h4>

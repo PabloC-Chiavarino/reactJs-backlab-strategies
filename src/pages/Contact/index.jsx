@@ -13,10 +13,10 @@ const Contact = () => {
         event.preventDefault()
         emailjs.send('backlab_contact', 'template_1',
             {
-                "name": formData.name?.value,
-                "email": formData.email?.value,
-                "exp": formData.tradingExp?.value,
-                "quant": formData.activesQuantity?.value
+                "name": formData.name.value,
+                "email": formData.email.value,
+                "exp": formData.tradingExp.value,
+                "quant": formData.activesQuantity.value
             },
             'KiJwZhBP7HAn8OxG1')
             .then((msg_body) => {

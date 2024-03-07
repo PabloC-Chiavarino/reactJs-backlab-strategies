@@ -1,4 +1,3 @@
-import { useId } from 'react'
 import { servicesData, backtestingData, automationData } from '../../constants/data.js'
 import { ParamsCards, Objetives, Stats, StatsCards } from '../../components/index.js'
 import { bannerBg2, backLabVector2, backLabVectorRight } from '../../assets/img/index.js'
@@ -6,8 +5,6 @@ import { Link } from 'react-router-dom';
 import './styles.css'
 
 const Services = () => {
-
-  const id = useId()
 
   return (
     <section className='section-services'>
@@ -43,7 +40,7 @@ const Services = () => {
           {backtestingData.map((data) => {
 
             return (
-              <div key={id} className='backtesting-info'>
+              <div key={data.title} className='backtesting-info'>
                 <h3 style={{ fontSize: '1rem', marginBottom: '5%' }}>{data.title}</h3>
                 <span className='backtesting-description backtesting-main-description'>{data.mainDescription}</span>
                 <span className='backtesting-description'>{data.description}</span>
@@ -77,7 +74,7 @@ const Services = () => {
           {automationData.map((data) => {
 
             return (
-              <div key={id} className='backtesting-info'>
+              <div key={data.title} className='backtesting-info'>
                 <h3 style={{ fontSize: '1rem', marginBottom: '5%' }}>{data.title}</h3>
                 <span className='backtesting-description'>{data.description}</span>
               </div>
@@ -107,7 +104,7 @@ const Services = () => {
           {servicesData.map((data) => {
 
             return (
-              <div key={id} className='service'>
+              <div key={data.title} className='service'>
                 <h3 style={{ fontSize: '1rem' }}>{data.title}</h3>
                 <p>{data.description}</p>
               </div>

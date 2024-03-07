@@ -209,26 +209,32 @@ export const statsData = [
 
 export const faqData = [
   {
+    id: 1,
     question: '?Cómo se asegura la calidad y precisión del desarrollo de la herramienta¿',
     answer: 'Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum'
   },
   {
+    id: 2,
     question: '?Puedo probar diferentes valores para los parámetros de mis estrategias durante el backtesting¿',
     answer: 'Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum'
   },
   {
+    id: 3,
     question: '?Se pueden añadir características adicionales a la herramienta según mis requerimientos¿',
     answer: 'Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum'
   },
   {
+    id: 4,
     question: '?Cómo se entrega la herramienta de backtesting una vez que está lista¿',
     answer: 'Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum'
   },
   {
+    id: 5,
     question: '?Cómo se asegura la calidad y precisión del desarrollo de la herramienta¿',
     answer: 'Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum'
   },
   {
+    id: 6,
     question: '?Qué activos están disponibles para el backtesting y en qué temporalidades se encuentran los datos históricos¿',
     answer: 'Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum'
   }

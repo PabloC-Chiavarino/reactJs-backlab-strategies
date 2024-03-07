@@ -1,24 +1,19 @@
 @keyframes grow {
     0% {
-        background-size: 100%;
+        scale: 1;
     }
-
-    25% {
-        background-size: 125%;
-    }
-
-    50% {
-        background-size: 150%;
-    }
-
-    75% {
-        background-size: 175%;
-    }
-
     100% {
-        background-size: 200%;
+        scale: 1.25;
     }
+}
 
+@keyframes fadeIn {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
 }
 
 .section-objectivos {
@@ -31,19 +26,26 @@
     margin-bottom: -5%;
     background-position-x: 36rem;
     z-index: 1;
+    overflow: hidden;
 
     &::before {
         content: url(/src/assets/img/degrade-black.svg);
         z-index: 2;
-        position: relative;
-        left: 17rem;
+        position: absolute;
+        left: 34rem;
+        animation: grow linear;
     }
 
     &::after {
-        content: url(/src/assets/img/objective-bg.svg);
+        content: '';
+        background-image: url(/src/assets/img/objective-bg.svg);
         position: absolute;
         z-index: 1;
-        right: -8px;
+        right: 0;
+        width: 58dvw;
+        height: 130dvh;
+        background-repeat: no-repeat;
+        animation: grow linear;
     }
 }
 
@@ -77,5 +79,6 @@
     white-space: nowrap;
     margin-top: 2rem;
     color: #01e481;
-    opacity: 1;
+    opacity: 0;
+    animation: fadeIn 5s ease;
 }
