@@ -10,16 +10,17 @@ const Faq = () => {
             </div >
             {faqData.map((data) => {
                 return (
-                    <>
-                        <div className='question-container'>
-                            <details key={data.id}>{data.answer}
+                    <div key={data.id} className='question-container'>
+                        <div>
+                            <details>
+                                {data.answer}
                                 <summary>
                                     {data.question}
                                 </summary>
                             </details>
                         </div>
                         <hr />
-                    </>
+                    </div>
                 )
             })}
         </div>

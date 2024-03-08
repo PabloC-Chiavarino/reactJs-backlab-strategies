@@ -31,37 +31,37 @@ const Contact = () => {
                     <span>
                         <div>
                             <label htmlFor="name">Nombre</label>
-                            <input type="text" placeholder='Juan' name='user_name' required />
+                            <input id='name' type="text" placeholder='Juan' name='user_name' required autoComplete='on' />
                         </div>
                         <div>
                             <label htmlFor="email">Email</label>
-                            <input type="text" placeholder='juan@gmail.com' name='user_email' required />
+                            <input id='email' type="text" placeholder='juan@gmail.com' name='user_email' required autoComplete='on' />
                         </div>
                     </span>
                     <span>
                         <div>
                             <h4 htmlFor="">¿Tenés experiencia en trading?</h4>
                             <span>
-                                <label htmlFor="yes">Sí</label>
-                                <input type="radio" name='user_tradingExp' value='Sí' required />
-                                <label htmlFor="no">No</label>
-                                <input type="radio" name='user_tradingExp' value='No' required />
+                                <label htmlFor="tExpY">Sí</label>
+                                <input id='tExpY' type="radio" name='user_tradingExp' value='Sí' required />
+                                <label htmlFor="tExpN">No</label>
+                                <input id='tExpN' type="radio" name='user_tradingExp' value='No' required />
                             </span>
                         </div>
                         <div>
                             <h4>¿Cuántos activos te gustaría testear?</h4>
                             <span>
-                                <label htmlFor="a">1-3</label>
-                                <input type="radio" id='a' name='user_actives' value='1-3' required />
-                                <label htmlFor="b">4-10</label>
-                                <input type="radio" id='b' name='user_actives' value='4-10' required />
-                                <label htmlFor="c">+10</label>
-                                <input type="radio" id='c' name='user_actives' value='10+' required />
+                                <label htmlFor='actives1'>1-3</label>
+                                <input id='actives1' type="radio" name='user_actives' value='1-3' required />
+                                <label htmlFor='actives2'>4-10</label>
+                                <input id='actives2' type="radio" name='user_actives' value='4-10' required />
+                                <label htmlFor='actives3'>+10</label>
+                                <input id='actives3' type="radio" name='user_actives' value='10+' required />
                             </span>
                         </div>
                     </span>
                     <label htmlFor='message'>Tu mensaje</label>
-                    <textarea name="user_message" minLength="20" cols="" rows="" placeholder='Mensaje' required />
+                    <textarea id='message' name="user_message" minLength="20" cols="" rows="" placeholder='Mensaje' required />
                     <button type='submit' className='submit-button'>Enviar</button>
                 </form>
                 <div className="form-subcontainer">
