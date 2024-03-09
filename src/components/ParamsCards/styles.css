@@ -75,6 +75,7 @@
   font-weight: 500;
 }
 
+
 @media (min-width: 1200px) and (max-width: 1365px){
   .section-customizable {
     min-height: 126dvh;
@@ -115,7 +116,7 @@
 @media (min-width: 1920px) {
   .section-customizable {
     background-size: 100dvw;
-    min-height: 110dvh;
+    min-height: 124dvh;
   }
 }
 
