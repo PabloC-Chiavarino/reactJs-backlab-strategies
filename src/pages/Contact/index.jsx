@@ -25,7 +25,6 @@ const Contact = () => {
     }
 
     const sendEmail = (event) => {
-        throwSuccessPopUp()
 
         event.preventDefault()
         emailjs.sendForm('backlab_contact', 'template_1', formData.current, 'KiJwZhBP7HAn8OxG1')
