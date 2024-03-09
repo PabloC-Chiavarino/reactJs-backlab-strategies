@@ -1,9 +1,28 @@
+.Toastify__toast--success {
+    border: 2px solid #01E481 !important;
+    border-radius: 1rem !important;
+    background: #F0F9FA !important;
+    width: max-content !important;
+    right: 5.5rem !important;
+    top: 7rem !important;
+    position: absolute !important;
+}
+
+.Toastify__toast-body {
+    color: #252B42    ;
+    font-size: 1rem;
+    line-height: 20px;
+    width: 100%;
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+}
+
 .contact-section {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     margin-bottom: 15%;
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
     color: #252B42;
     padding-top: 4%;
 }
@@ -118,7 +137,7 @@ textarea {
     color: #979797;
     padding: 8px 24px 8px 24px;
     font-size: 1rem;
-    font-family: Montserrat;
+    font-family: 'Montserrat', sans-serif;
 }
 
 input {
@@ -148,7 +167,7 @@ textarea {
     background-color: #01E481;
     color: black;
     border: none;
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
     box-sizing: border-box;
     font-weight: 700;
     font-size: 1rem;

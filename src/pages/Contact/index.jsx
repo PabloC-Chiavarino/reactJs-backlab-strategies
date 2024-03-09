@@ -1,22 +1,38 @@
+import { Bounce, ToastContainer, toast } from 'react-toastify'
 import emailjs from '@emailjs/browser'
 import { useRef } from 'react'
 import { Faq } from '../../components'
 import { contactImg, socialMedia } from '../../assets/img'
 import './styles.css'
+import 'react-toastify/dist/ReactToastify.css';
 
 const Contact = () => {
 
     const formData = useRef()
 
+    const throwSuccessPopUp = () => {
+        toast.success('Formulario enviado correctamente!', {
+            // position: "top-right",
+            autoClose: 4000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: false,
+            draggable: true,
+            progress: undefined,
+            theme: "dark",
+            transition: Bounce
+        })
+    }
+
     const sendEmail = (event) => {
+        throwSuccessPopUp()
 
         event.preventDefault()
         emailjs.sendForm('backlab_contact', 'template_1', formData.current, 'KiJwZhBP7HAn8OxG1')
-            .then((result) => {
-                console.log(result.text)
+            .then(() => {
+                throwSuccessPopUp()
                 formData.current.reset()
-            }
-            )
+            })
             .catch((err) => console.log(err))
     }
 
@@ -26,7 +42,9 @@ const Contact = () => {
                 <h2 className='title'>Contáctanos</h2>
                 <h3 className='info'>Completá el formulario y te enviaremos una propuesta a tu medida</h3>
             </div>
+            <ToastContainer />
             <div className='form-container gradient-border'>
+
                 <form ref={formData} onSubmit={sendEmail}>
                     <span>
                         <div>
