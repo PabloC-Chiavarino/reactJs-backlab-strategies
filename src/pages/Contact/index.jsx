@@ -1,4 +1,4 @@
-import { useState, useRef } from 'react'
+import { useState, useRef, useEffect } from 'react'
 import { Bounce, ToastContainer, toast } from 'react-toastify'
 import emailjs from '@emailjs/browser'
 import { Faq } from '../../components'
@@ -18,12 +18,13 @@ const Contact = () => {
 
     const [isDisabled, setIsDisabled] = useState(true)
 
-    const handleOnChange = (e) => {
-
+    useEffect(() => {
         formData.name && formData.email && formData.message !== '' ?
-            setIsDisabled(false)
-            :
-            setIsDisabled(true)
+        setIsDisabled(false) : setIsDisabled(true)
+    }, [formData]
+)
+
+    const handleOnChange = (e) => {     
             
         setFormData(
             {
@@ -31,6 +32,7 @@ const Contact = () => {
                 [e.target.name]: e.target.value
             }
         )
+            console.log(formData)
     }
 
     const throwSuccessPopUp = () => {
