@@ -120,8 +120,13 @@ section {
 
 .team-detail {
     margin-top: 1rem;
-    line-height: 1.5rem;
+    line-height: 1.8rem;
     font-size: 1.1rem;
+    overflow-y: scroll;
+    padding-right: 1rem;
+    scrollbar-color: #252B42 #fff;
+    scrollbar-width: thin;
+    width: 30rem;
 }
 
 .team-name {

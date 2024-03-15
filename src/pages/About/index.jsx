@@ -4,7 +4,7 @@ import './styles.css'
 const About = () => {
     return (
         <>
-            <section style={{paddingTop: '4%'}}>
+            <section style={{ paddingTop: '4%' }}>
                 <div className='title-container'>
                     <h2 className='title'>Acerca de nosotros</h2>
                 </div>
@@ -42,19 +42,16 @@ const About = () => {
                     <div className='team' style={{ right: '6rem' }}>
                         <img src={team1} alt="" />
                         <div className='team-data'>
-                            <h3 className='team-name'>Nombre del integrante</h3>
+                            <h3 className='team-name'>Juan Casimiro</h3>
                             <h6>ROL</h6>
                             <p className='team-detail' >
-                                Lorem Impsum Lorem Impsum Lorem Impsum
-                                Lorem Impsum Lorem Impsum Lorem Impsum
-                                Lorem Impsum Lorem Impsum Lorem Impsum
-                                Lorem Impsum Lorem Impsum Lorem Impsum
-                                Lorem Impsum Lorem Impsum Lorem Impsum
-                                Lorem Impsum Lorem Impsum Lorem Impsum
-                                Lorem Impsum Lorem Impsum Lorem Impsum
-                                Lorem Impsum Lorem Impsum Lorem Impsum
-                                Lorem Impsum Lorem Impsum Lorem Impsum
-                                Lorem Impsum Lorem Impsum Lorem Impsum
+                                ¡Hola a todos! Soy Juan Casimiro, y entiendo los desafíos y preocupaciones que enfrentan los traders al tratar de navegar por los mercados financieros. Como trader autodidacta y desarrollador full stack, he dedicado mi carrera a crear soluciones tecnológicas que faciliten y mejoren la experiencia de trading. Como trader autodidacta durante más de cuatro años, conozco la importancia de contar con herramientas confiables y efectivas para tomar decisiones informadas en un mercado volátil.
+                                <br/>
+                                <br/>
+                                Entiendo los miedos y las incertidumbres que pueden surgir al enfrentarse al mundo del trading, y estoy aquí para ofrecerte las herramientas y el apoyo que necesitas para tener éxito. Con un enfoque en la profesionalidad, la calidad y la transparencia, mi objetivo es proporcionarte soluciones personalizadas que se adapten a tus necesidades. Ya sea que estés buscando optimizar tus estrategias de trading o simplificar tus procesos de análisis, estoy aquí para ayudarte a alcanzar tus objetivos financieros.
+                                <br/>
+                                <br/>
+                                ¡No estás solo en este viaje! Estoy aquí para ofrecerte apoyo y orientación en cada paso del camino.
                             </p>
                         </div>
                     </div>
