@@ -331,3 +331,9 @@ html {
 .backtesting-main-description {
   color: #6315FF;
 }
+
+@media (min-width: 1920px) {
+  .secondary-banner-subcontainer{
+    margin-top: 5.5%;
+  }
+}
