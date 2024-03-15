@@ -211,31 +211,31 @@ export const faqData = [
   {
     id: 1,
     question: '?Cómo se asegura la calidad y precisión del desarrollo de la herramienta¿',
-    answer: 'Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum'
+    answer: '              En cada fase, desde la planificación hasta la ejecución, vos formas parte del proceso. Analizamos detalladamente tus necesidades y expectativas antes de iniciar cualquier proyecto, validando cada paso contigo. Durante este proceso, nos respaldamos en sistemas internos especializados para mejorar las validaciones con el cliente y garantizamos la continua entrega de valor a través de metodologías ágiles.'
   },
   {
     id: 2,
     question: '?Puedo probar diferentes valores para los parámetros de mis estrategias durante el backtesting¿',
-    answer: 'Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum'
+    answer: '              ¡Claro que sí! Entendemos lo crucial que es tener la libertad de probar tu estrategia con una amplia gama de valores para los parámetros durante el backtesting. Esto te permite simular condiciones realistas del mercado y evaluar el rendimiento de tu estrategia en diversas situaciones. Con nuestra plataforma de backtesting, tienes la flexibilidad para experimentar con cualquier valor dentro de los rangos realistas que encontrarías al utilizar tu estrategia en la vida real. Esto te ayuda a tomar decisiones más informadas y a sentirte seguro al implementar tu estrategia en el mercado en tiempo real.\n\nSi tienes más preguntas o necesitas más información, no dudes en contactarnos. Estamos aquí para ayudarte a alcanzar tus metas financieras con confianza y seguridad.'
   },
   {
     id: 3,
     question: '?Se pueden añadir características adicionales a la herramienta según mis requerimientos¿',
-    answer: 'Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum'
+    answer: '              Sí, por supuesto. Nos esforzamos por satisfacer tus necesidades únicas en el trading. Nuestra herramienta es altamente adaptable, permitiéndote agregar características adicionales según tus requerimientos específicos. Contáctanos para discutir cómo podemos optimizar tu experiencia de trading y ayudarte a alcanzar tus metas financieras. Estamos comprometidos en brindarte la mejor solución para tus necesidades comerciales.'
   },
   {
     id: 4,
     question: '?Cómo se entrega la herramienta de backtesting una vez que está lista¿',
-    answer: 'Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum'
+    answer: '              Una vez que la herramienta de backtesting está lista, la entregamos de forma conveniente y accesible: en formato web. Esto significa que puedes acceder a la herramienta desde cualquier navegador web sin necesidad de descargar o instalar ningún software adicional. Simplemente inicia sesión en tu cuenta y comienza a utilizar la herramienta de inmediato. Esta entrega en formato web te brinda la flexibilidad de utilizar la herramienta desde cualquier lugar y en cualquier momento, lo que facilita tu experiencia.'
   },
   {
     id: 5,
     question: '?Cómo se asegura la calidad y precisión del desarrollo de la herramienta¿',
-    answer: 'Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum'
+    answer: '              Para asegurarnos de que nuestra herramienta sea de la más alta calidad y precisión, primero nos tomamos el tiempo para entender tus necesidades y objetivos de trading. Trabajamos contigo de cerca para comprender completamente lo que buscas lograr. Luego, realizamos pruebas exhaustivas y simulamos situaciones reales para que puedas ver cómo funciona la herramienta en acción. Queremos que te sientas cómodo y seguro al usar nuestra herramienta, por lo que nos esforzamos por brindarte una experiencia de backtesting confiable y precisa.\n\nSi tienes alguna pregunta o necesitas más información, ¡no dudes en ponerte en contacto con nosotros! Estamos aquí para ayudarte en tu viaje hacia el éxito financiero.'
   },
   {
     id: 6,
     question: '?Qué activos están disponibles para el backtesting y en qué temporalidades se encuentran los datos históricos¿',
-    answer: 'Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum'
+    answer: '              Para garantizar que nuestra herramienta de backtesting se adapte a tus necesidades, ofrecemos una amplia gama de activos para que puedas realizar pruebas. Esto incluye acciones, índices, pares de divisas y materias primas. Además, proporcionamos datos históricos en diversas temporalidades, desde minutos hasta días o semanas. Esto te permite analizar el rendimiento de tus estrategias en diferentes marcos de tiempo y mercados, brindándote una visión completa y detallada para tomar decisiones informadas en tu trading.\n\nSi tienes alguna preferencia específica o necesitas más información sobre los activos disponibles, ¡no dudes en contactarnos! Estamos aquí para ayudarte en tu viaje hacia el éxito financiero.'
   }
 ]
