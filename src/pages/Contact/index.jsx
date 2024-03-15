@@ -12,6 +12,8 @@ const Contact = () => {
 
     const [ formData, setFormData] = useState({
         name: '',
+        tradingExp: '',
+        actives: '',
         email: '',
         message: ''
     })
@@ -32,7 +34,6 @@ const Contact = () => {
                 [e.target.name]: e.target.value
             }
         )
-            console.log(formData)
     }
 
     const throwSuccessPopUp = () => {
@@ -51,10 +52,16 @@ const Contact = () => {
     const sendEmail = (event) => {
 
         event.preventDefault()
-        emailjs.sendForm('backlab_contact', 'template_1', formData.current, 'KiJwZhBP7HAn8OxG1')
+        emailjs.send('backlab_contact', 'template_1', formData, 'KiJwZhBP7HAn8OxG1')
             .then(() => {
+                console.log(formData)
                 throwSuccessPopUp()
-                formData.current.reset()
+                setFormData({
+                    name: '',
+                    email: '',
+                    message: ''
+                })
+                form.current.reset()
             })
             .catch((err) => console.log(err))
     }
@@ -105,7 +112,8 @@ const Contact = () => {
                                 <input
                                     id='tExpY'
                                     type="radio"
-                                    name='user_tradingExp'
+                                    name='tradingExp'
+                                    onClick={handleOnChange}
                                     value='Sí'
                                     required
                                 />
@@ -113,7 +121,8 @@ const Contact = () => {
                                 <input
                                     id='tExpN'
                                     type="radio"
-                                    name='user_tradingExp'
+                                    name='tradingExp'
+                                    onClick={handleOnChange}
                                     value='No'
                                     required
                                 />
@@ -126,15 +135,16 @@ const Contact = () => {
                                 <input
                                     id='actives1'
                                     type="radio"
-                                    name='user_actives'
-                                    value='1-3'
-                                    required
+                                    name='actives'
+                                    onClick={handleOnChange}
+                                    value='1-3'                                    required
                                 />
                                 <label htmlFor='actives2'>4-10</label>
                                 <input
                                     id='actives2'
                                     type="radio"
-                                    name='user_actives'
+                                    name='actives'
+                                    onClick={handleOnChange}
                                     value='4-10'
                                     required
                                 />
@@ -142,9 +152,9 @@ const Contact = () => {
                                 <input
                                     id='actives3'
                                     type="radio"
-                                    name='user_actives'
-                                    value='10+'
-                                    required
+                                    name='actives'
+                                    onClick={handleOnChange}
+                                    value='10+'                                    required
                                 />
                             </span>
                         </div>
