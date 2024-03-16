@@ -1,7 +1,6 @@
 import { servicesData, backtestingData, automationData } from '../../constants/data.js'
 import { ParamsCards, Objetives, Stats, StatsCards } from '../../components/index.js'
 import { bannerBg2, backLabVector2, backLabVectorRight } from '../../assets/img/index.js'
-import { Link } from 'react-router-dom';
 import './styles.css'
 
 const Services = () => {
@@ -85,9 +84,13 @@ const Services = () => {
         <div className="secondary-banner-container">
           <div className="secondary-banner-subcontainer">
             <h3 className='secondary-banner-text'>Potenciamos<br />tu Estrategia<br />de Trading</h3>
-            <Link to="/Contact">
-              <button className='secondary-banner-button'>CONSULTANOS</button>
-            </Link>
+              <a
+                className='secondary-banner-button'
+                href="https://wa.me/5492281300940"
+                target="_blank"
+                rel="noopener noreferrer">
+                CONSULTANOS
+              </a>
           </div>
           <img className='secondary-banner-bg' src={bannerBg2} alt="" />
           <img className='secondary-banner-vector' src={backLabVector2} alt="" />
