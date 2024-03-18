@@ -2,7 +2,7 @@ header {
     background-color: #F7F4FE;
     position: sticky;
     top: 0;
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
     height: 105px;
     z-index: 3;
     display: flex;
@@ -46,9 +46,14 @@ nav {
     text-decoration: none;
     color: #858585;
     transition: 0.2s;
-    &:hover{
+
+    &:hover {
         color: #252b42;
     }
+
+    &:focus{
+        color: #000;
+    }    
 }
 
 nav #toggle,
@@ -70,7 +75,7 @@ nav label {
     display: none;
 }
 
-.img-home{
+.img-home {
     padding-bottom: 4px;
     width: 100%;
 }
