@@ -39,7 +39,7 @@ const About = () => {
                 </div>
                 <img className='teamImg' src={teamWork} style={{ marginTop: '-30px', marginBottom: '-5px' }} alt="" />
                 <div className='team-container'>
-                    <div className='team' style={{ right: '6rem' }}>
+                    <div className='team' style={{ right: '4rem' }}>
                         <img src={team1} alt="" />
                         <div className='team-data'>
                             <h3 className='team-name'>Juan Casimiro</h3>
@@ -55,7 +55,7 @@ const About = () => {
                             </p>
                         </div>
                     </div>
-                    <div className='team' style={{ left: '6rem' }}>
+                    <div className='team' style={{ left: '7.5rem' }}>
                         <img src={team2} alt="" />
                         <div className='team-data'>
                             <h3 className='team-name'>Ignacio Tolosa</h3>
