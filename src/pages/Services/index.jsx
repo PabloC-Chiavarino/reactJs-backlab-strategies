@@ -1,5 +1,5 @@
 import { servicesData, backtestingData, automationData } from '../../constants/data.js'
-import { ParamsCards, Objetives, Stats, StatsCards } from '../../components/index.js'
+import { ParamsCards, Objectives, Stats, StatsCards } from '../../components/index.js'
 import { bannerBg2, backLabVector2, backLabVectorRight } from '../../assets/img/index.js'
 import './styles.css'
 
@@ -119,7 +119,7 @@ const Services = () => {
       <ParamsCards />
       <Stats />
       <StatsCards />
-      <Objetives />
+      <Objectives />
     </section>
   )
 }

@@ -1,17 +1,19 @@
 @keyframes grow {
-    0% {
+    from {
         scale: 1;
     }
-    100% {
+
+    to {
         scale: 1.25;
     }
 }
 
 @keyframes fadeIn {
-    0%{
+    from {
         opacity: 0;
     }
-    100%{
+
+    to {
         opacity: 1;
     }
 }
@@ -32,21 +34,25 @@
         content: url(/src/assets/img/degrade-black.svg);
         z-index: 2;
         position: absolute;
-        left: 34rem;
-        animation: grow linear;
+        left: 25rem;
     }
 
-    &::after {
-        content: '';
-        background-image: url(/src/assets/img/objective-bg.svg);
-        position: absolute;
-        z-index: 1;
-        right: 0;
-        width: 58dvw;
-        height: 130dvh;
-        background-repeat: no-repeat;
-        animation: grow linear;
-    }
+}
+
+.section-objectivos img {
+    position: relative;
+    float: right;
+}
+
+.animateGrow {
+    animation: grow 1.75s ease-out;
+    animation-fill-mode: forwards;
+}
+
+.animateFade {
+    animation: fadeIn 1s ease-in;
+    animation-fill-mode: forwards;
+    animation-delay: .5s;
 }
 
 .title-info-container {
@@ -80,5 +86,16 @@
     margin-top: 2rem;
     color: #01e481;
     opacity: 0;
-    animation: fadeIn 5s ease;
+}
+
+@media (min-width: 1200px) and (max-width:1300px) {
+    .section-objectivos::before {
+        left: 20rem;
+    }
+}
+
+@media (min-width: 1920px) {
+    .section-objectivos::before {
+        left: 60rem;
+    }
 }
