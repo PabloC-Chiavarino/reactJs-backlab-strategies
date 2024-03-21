@@ -39,9 +39,10 @@
 
 }
 
-.section-objectivos img {
+.objectives-bg {
     position: relative;
     float: right;
+    scale: 1.25;
 }
 
 .animateGrow {
