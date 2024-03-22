@@ -15,15 +15,13 @@ const Objectives = () => {
             spanRef.current
         ]
 
-        const callback = (entries) => {
+        const observer = new IntersectionObserver(entries => {
             entries.forEach(entry => setIsIntersecting(entry.isIntersecting))
-        }
-
-        const observer = new IntersectionObserver(callback)
+        })
 
         if (elements) {
-            elements.forEach((target) => {
-                observer.observe(target)
+            elements.forEach((element) => {
+                observer.observe(element)
             })
         }
 
