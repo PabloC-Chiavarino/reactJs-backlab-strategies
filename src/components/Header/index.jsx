@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import LangSwitcher from '../LangSwitcher';
 import { brandLogo } from '../../assets/img';
 import { twitter, facebook, instagram, linkedin, menu } from '../../assets/icons';
 import './styles.css';
@@ -31,6 +32,7 @@ const Header = () => {
         </div>
           <hr style={{width: '82%', position: 'absolute', marginTop: '1rem'}} />
       </nav>
+      <LangSwitcher />
     </header>
   );
 };
