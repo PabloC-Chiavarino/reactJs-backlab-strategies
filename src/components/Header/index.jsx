@@ -8,7 +8,6 @@ const Header = () => {
     <header>
       <nav>
         <input type="checkbox" name='' id='toggle' />
-        <label htmlFor="toggle"><img src={menu} alt="menu desplegable" /></label>
         <div className="menu">
           <div className="logo">
             <span>
@@ -29,8 +28,8 @@ const Header = () => {
             <a href="https://www.instagram.com/backlab.strategies/" target='blank'><img src={instagram} alt="instagram" /></a>
             <a href="https://www.linkedin.com/company/101579217/admin/feed/posts/?feedType=following" target='blank'><img src={linkedin} alt="linkedin" /></a>
           </div>
-          <hr style={{width: '84.4%', position: 'absolute', marginTop: '95px'}} />
         </div>
+          <hr style={{width: '82%', position: 'absolute', marginTop: '1.5rem'}} />
       </nav>
     </header>
   );

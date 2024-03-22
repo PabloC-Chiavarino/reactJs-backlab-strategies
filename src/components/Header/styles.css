@@ -10,7 +10,7 @@ header {
 }
 
 nav {
-    width: 84.35%;
+    width: 83%;
     padding-top: 1.5rem;
 }
 
@@ -34,8 +34,10 @@ nav {
 .nav-links {
     list-style: none;
     display: flex;
-    padding-left: 7rem;
-    gap: 50px;
+    padding-left: 5rem;
+    gap: 45px;
+    position: relative;
+    top: 1rem
 }
 
 .nav-links a {
@@ -63,6 +65,9 @@ nav label {
 
 .social-icons {
     display: flex;
+    position: relative;
+    top: 1rem;
+    padding-right: 1rem;
 }
 
 .social-icons img {
