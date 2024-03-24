@@ -9,6 +9,7 @@
 
 .lang-toggle-switcher div img {
     width: 26px;
+    transition: .5s;
 }
 
 .toggle-on {
@@ -17,7 +18,7 @@
 
 .toggle-off {
     scale: 0.8;
-    opacity: 0.4;
+    opacity: 0.4 !important;
     
     &:hover {
         cursor: pointer;
