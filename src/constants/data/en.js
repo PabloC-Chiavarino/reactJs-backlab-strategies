@@ -2,52 +2,52 @@ const dataEN = {
 
     mainCardsData: [
       {
-        icon: "../../../src/assets/icons/dato-historico.svg",
+        icon: "src/assets/icons/dato-historico.svg",
         title: "Complex Historical Data",
         description: "Access to detailed and complete historical data for in-depth analysis."
       },
       {
-        icon: "../../../src/assets/icons/divisas.svg",
+        icon: "src/assets/icons/divisas.svg",
         title: "Asset Diversity",
         description: "Ability to backtest strategies on a wide range of financial assets, including stocks, cryptocurrency and commodities."
       },
       {
-        icon: "../../../src/assets/icons/flexibilidad.svg",
+        icon: "src/assets/icons/flexibilidad.svg",
         title: "Temporal Flexibility",
         description: "Option to adjust the date range and time frequency to adapt to different analysis periods."
       },
       {
-        icon: "../../../src/assets/icons/parametros.svg",
+        icon: "src/assets/icons/parametros.svg",
         title: "Indicator Customization",
         description: "Ability to use a variety of technical indicators and customize parameters according to the needs of the strategy."
       },
       {
-        icon: "../../../src/assets/icons/analisis-estadistico.svg",
+        icon: "src/assets/icons/analisis-estadistico.svg",
         title: "Statistic analysis",
         description: "Advanced statistical analysis tools to evaluate strategy performance, including metrics such as Sharpe ratio and maximum drawdown."
       },
       {
-        icon: "../../../src/assets/icons/multiplataforma.svg",
+        icon: "src/assets/icons/multiplataforma.svg",
         title: "Multiplatform Backtesting",
         description: "Compatibility with various trading platforms to ensure consistency in the results obtained."
       },
       {
-        icon: "../../../src/assets/icons/condicionreal.svg",
+        icon: "src/assets/icons/condicionreal.svg",
         title: "Testing of Real Conditions",
         description: "Ability to simulate real market conditions, including transaction costs and slippage, for more accurate results."
       },
       {
-        icon: "../../../src/assets/icons/interfaz.svg",
+        icon: "src/assets/icons/interfaz.svg",
         title: "Intuitive interface",
         description: "Friendly, easy-to-use interface design enables a smooth and efficient backtesting experience for users of all experience levels."
       },
       {
-        icon: "../../../src/assets/icons/riesgo.svg",
+        icon: "src/assets/icons/riesgo.svg",
         title: "Risk management",
         description: "It allows you to evaluate and adjust strategies considering risk, with options to establish stop loss and take profit levels and manage position size according to market volatility."
       },
       {
-        icon: "../../../src/assets/icons/web.svg",
+        icon: "src/assets/icons/web.svg",
         title: "Web Exclusivity",
         description: "The tool is offered through an exclusive web platform for our clients, providing easy and convenient access from any device with an internet connection."
       }

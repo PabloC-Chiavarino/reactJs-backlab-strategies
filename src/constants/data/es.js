@@ -1,53 +1,55 @@
+  
+  
   const dataES = {
 
     mainCardsData: [
       {
-        icon: "../../../src/assets/icons/dato-historico.svg",
+        icon: "src/assets/icons/dato-historico.svg",
         title: "Datos Históricos Complejos",
         description: "Acceso a datos históricos detallados y completos para realizar análisis exhaustivos."
       },
       {
-        icon: "../../../src/assets/icons/divisas.svg",
+        icon: "src/assets/icons/divisas.svg",
         title: "Diversidad de Activos",
         description: "Posibilidad de backtestear estrategias en una amplia gama de activos financieros, incluyendo acciones, divisas criptomoneda y materias primas."
       },
       {
-        icon: "../../../src/assets/icons/flexibilidad.svg",
+        icon: "src/assets/icons/flexibilidad.svg",
         title: "Flexibilidad Temporal",
         description: "Opción de ajustar el rango de fechas y frecuencia temporal para adaptarse a diferentes períodos de análisis."
       },
       {
-        icon: "../../../src/assets/icons/parametros.svg",
+        icon: "src/assets/icons/parametros.svg",
         title: "Personalización de Indicadores",
         description: "Capacidad para utilizar una variedad de indicadores técnicos y personalizar parámetros según las necesidades de la estrategia."
       },
       {
-        icon: "../../../src/assets/icons/analisis-estadistico.svg",
+        icon: "src/assets/icons/analisis-estadistico.svg",
         title: "Análisis Estadístico",
         description: "Herramientas avanzadas de análisis estadístico para evaluar el rendimiento de la estrategia, incluyendo métricas como ratio de Sharpe y drawdown máximo."
       },
       {
-        icon: "../../../src/assets/icons/multiplataforma.svg",
+        icon: "src/assets/icons/multiplataforma.svg",
         title: "Backtesting Multiplataforma",
         description: "Compatibilidad con diversas plataformas de trading para asegurar la consistencia en los resultados obtenidos."
       },
       {
-        icon: "../../../src/assets/icons/condicionreal.svg",
+        icon: "src/assets/icons/condicionreal.svg",
         title: "Pruebas de Condiciones Reales",
         description: "Capacidad para simular condiciones de mercado reales, incluyendo costos de transacción y deslizamiento, para obtener resultados más precisos."
       },
       {
-        icon: "../../../src/assets/icons/interfaz.svg",
+        icon: "src/assets/icons/interfaz.svg",
         title: "Inferfaz Intuitiva",
         description: "Diseño de interfaz amigable y fácil de usar que permite una experiencia de backtesting fluida y eficiente para usuarios de todos los niveles de experiencia."
       },
       {
-        icon: "../../../src/assets/icons/riesgo.svg",
+        icon: "src/assets/icons/riesgo.svg",
         title: "Gestión de Riesgos",
         description: "Permite evaluar y ajustar estrategias considerando el riesgo, con opciones para establecer niveles de stop loss, take profit y gestionar el tamaño de posición según la volatilidad del mercado."
       },
       {
-        icon: "../../../src/assets/icons/web.svg",
+        icon: "src/assets/icons/web.svg",
         title: "Exclusiviad Web",
         description: "La herramienta se ofrece a través de una plataforma web exclusiva para nuestros clientes, brindando acceso fácil y conveniente desde cualquier dispositivo con conexión a internet."
       }
