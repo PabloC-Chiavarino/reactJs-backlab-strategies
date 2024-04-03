@@ -1,14 +1,17 @@
-import { faqData } from "../../constants/data"
+import useLangContext from '../../hooks/useLangContext'
 import './styles.css'
 
 const Faq = () => {
+
+    const { langData } = useLangContext()
+    const { faqData } = langData
 
     return (
         <div className='faq-container'>
             <div className="faq-title-container" >
                 <h2>Preguntas Frecuentes</h2>
             </div >
-            {faqData.map((data) => {
+            {faqData?.map((data) => {
                 return (
                     <div key={data.id} className='question-container'>
                         <div>

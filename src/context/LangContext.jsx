@@ -1,21 +1,38 @@
-import { createContext, useState } from 'react'
+import { createContext, useEffect, useState } from 'react'
 
-export const LangContext = createContext()
+const LangContext = createContext()
 
 const LangProvider = ({ children }) => {
 
     const [ lang, setLang ] = useState('es')
+    const [ langData, setLangData ] = useState([{}])
 
+    useEffect(() => {
+
+        getLangData()
+        
+    }, [lang])
+    const getLangData = () => {
+        
+        const dataPath = `../../src/constants/data/${lang}.json`
+        
+        fetch(dataPath)
+            .then((response) => response.json())
+            .then((data) => setLangData(data))
+            .catch((error) => console.error('Error fetching language data:', error)) 
+    }
+    
     const values = {
         lang,
-        setLang
+        setLang,
+        langData
     }
 
     return (
-        <LangContext.Provider value={ values }>
+        <LangContext.Provider value={values}>
             {children}
         </LangContext.Provider>        
     )
 }
 
-export default LangProvider
+export { LangContext, LangProvider }

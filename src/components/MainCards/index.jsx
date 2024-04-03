@@ -1,9 +1,10 @@
-import { mainCardsData } from '../../constants/data';
+import useLangContext from '../../hooks/useLangContext';
 import './styles.css';
 
 const MainCards = () => {
 
-  return mainCardsData.map((data) => {
+  const { langData } = useLangContext()
+  return langData['mainCardsData']?.map((data) => {
 
     return (
       <div className="main-card" key={data.title}>

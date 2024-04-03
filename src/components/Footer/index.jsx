@@ -1,19 +1,28 @@
+import { Link } from 'react-router-dom';
+import useLangContext from '../../hooks/useLangContext'
 import { test, facebookFooter, instagramFooter, linkedinFooter, xFooter, arrowIco } from '../../assets/icons'
 import './styles.css';
-import { Link } from 'react-router-dom';
 
 const Footer = () => {
+    
+    const { lang } = useLangContext();
+
     return (
         <section id='Home' className='section-footer'>
             <div className="contenedor">
                 <div className="rectangulo gradient-border-footer">
                     <div className="contenido">
                         <img src={test} alt="icono regalo" className='icono-regalo' />
-                        <h2>¡Prueba <br />Gratis!</h2>
-                        <p className="p-prueba">Contáctate con nosotros para realizar <br />una prueba gratis de nuestro servicio</p>
+                        <h2 key={lang+15}>{lang === 'es' ? 'Prueba gratis' : 'Try for free'}</h2>
+                        <p className="p-prueba" key={lang+16}>
+                            {lang === 'es' ? 'Contáctate con nosotros para realizar una prueba gratis de nuestro servicio' : 'Contact us to get a free trial of our service'}
+                        </p>
                         <Link to="/contact">
-                            <button>
-                                <img src={arrowIco} alt='' />
+                            <button 
+                                data-text= { lang === 'es' ? 'Prueba Ahora!' : 'Try Now!' }
+                                style={ lang === 'es' ? { paddingLeft: '10px' } : { paddingLeft: '0' } }
+                                key={lang+17}>
+                                    <img src={arrowIco} alt='' />
                             </button>
                         </Link>
                     </div>

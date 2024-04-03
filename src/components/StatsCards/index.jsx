@@ -3,29 +3,37 @@ import '../ParamsCards/styles.css';
 import './styles.css'
 
 
-const StatsCards = () => {
+const StatsCards = ({ lang }) => {
+    
     return (
-        <div className='stats-cards-section'>
-            <h1 className='stats-subtitle'>¡Estadísticas Personalizables!</h1>
+        <div className='stats-cards-section' key={lang+24}>
+            <h1 className='stats-subtitle'>
+                { lang === 'es' ? '¡Estadísticas Personalizables!' : '¡Customizable Statistics!' }
+            </h1>
             <p className='stats-text'>
-                Nos complace informarle que <span>posibilidad de personalizar las<br />
-                    estadísticas según sus requerimientos individuales.</span>
+                {lang === 'es' ? 'Nos complace informarle que ' : 'We are pleased to inform you that '} 
+                <span>
+                    { lang === 'es' ? 'posibilidad de personalizar las estadísticas según sus requerimientos individuales.' : 'possibility to customize the statistics according to their individual requirements.' }
+                </span>
             </p>
-            <div className='stats-cards-container'>
+            <div className='stats-cards-container' key={lang+25}>
                 <div className='stat-card'>
                     <img src={numbers2} alt='pantallas' />
-                    <h3 className='stat-card-title'>¡ Pedinos tu tipo de estadística !</h3>
-                    <p className='stat-card-text'>Si hay estadísticas específicas que le gustaría<br />
-                        incluir en su informe de backtesting,<br />
-                        no dude en informarnos</p>
-
+                    <h3 className='stat-card-title'>
+                        { lang === 'es' ? '¡Pedinos tu tipo de estadística!' : '¡Ask us your type of statistics!' }
+                    </h3>
+                    <p className='stat-card-text'>
+                        { lang === 'es' ? 'Si hay estadísticas específicas que le gustaría incluir en su informe de backtesting, no dude en informarnos' : 'If there are specific statistics that you like to include in your backtesting report, don\'t hesitate to inform us' }
+                    </p>
                 </div>
                 <div className='stat-card'>
                     <img src={trading2} alt='pantallas' />
-                    <h3 className='stat-card-title'>Otras Estadísticas</h3>
-                    <p className='stat-card-text'>Además de las estadísticas por default que te<br/>
-                        ofrecemos, tambien te proporcionamos otras<br/>
-                        estadísticas específicas </p>
+                    <h3 className='stat-card-title'>
+                        { lang === 'es' ? 'Otras Estadísticas' : 'Other Statistics' }
+                    </h3>
+                    <p className='stat-card-text'>
+                        { lang === 'es' ? 'Además de las estadísticas por default que te ofrecemos, tambien te proporcionamos otras estadísticas específicas' : 'As well as the default statistics we offer, we also provide other specific statistics' }
+                    </p>
 
                 </div>
             </div>
