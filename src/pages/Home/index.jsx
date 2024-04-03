@@ -55,8 +55,6 @@ const Home = () => {
                 </h1>
                 <p className='home-cards-description' key={lang+7}>
                     {lang === 'es' ? 'Estas son algunas de las características fundamentales de BackLab Strategies.' : 'Here are some fundamental features of BackLab Strategies.'}
-                </p>
-                <p className="home-cards-description" key={lang+8}>
                     {lang === 'es' ? 'Lea la documentación a continuación y ante cualquier duda contáctese con nosotros.' : 'Read the documentation below and if you have any questions contact us.'}
                 </p>
                 <div className="home-cards-container">
