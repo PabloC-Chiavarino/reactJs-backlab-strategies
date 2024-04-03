@@ -1,4 +1,5 @@
 import { createContext, useEffect, useState } from 'react'
+import { ES, EN } from '../constants/data'
 
 const LangContext = createContext()
 
@@ -14,12 +15,8 @@ const LangProvider = ({ children }) => {
     }, [lang])
     const getLangData = () => {
         
-        const dataPath = `../../src/constants/data/${lang}.json`
-        
-        fetch(dataPath)
-            .then((response) => response.json())
-            .then((data) => setLangData(data))
-            .catch((error) => console.error('Error fetching language data:', error)) 
+        const data = lang === 'es' ? ES : EN
+        setLangData(data)
     }
     
     const values = {

@@ -1,9 +1,11 @@
 import { useState, useEffect, useRef } from 'react'
+import useLangContext from '../../hooks/useLangContext'
 import { objectivesBg } from '../../assets/img'
 import './styles.css'
 
 const Objectives = () => {
 
+    const { lang } = useLangContext()
     const [isIntersecting, setIsIntersecting] = useState(false)
     const backgroundRef = useRef()
     const spanRef = useRef()
@@ -37,17 +39,17 @@ const Objectives = () => {
                 src={objectivesBg}
                 alt=""
             />
-            <div className="title-info-container">
-                <h1 className='title-object'>¡Nos <br />
-                    adaptamos a <br />
-                    tus objetivos!</h1>
+            <div className="title-info-container" key={lang}>
+                <h1 className='title-object'>
+                    { lang === 'es' ? `¡Nos adaptamos a tus objetivos!` : '¡We adapt to your objectives!' }
+                </h1>
                 <p className='p-object'>
-                    Si hay parámetros y estrategias específicas que le gustaría ajustar para su backtesting...
-                    <br />
+                    { lang === 'es' ? 'Si hay parámetros y estrategias específicas que le gustaría ajustar para su backtesting...' : 'If there are parameters and specific strategies that you like to adjust for your backtesting...' }
                     <span
                         ref={spanRef}
-                        className={isIntersecting ? 'span-object animateFade' : 'span-object'}
-                    >¡NO DUDE EN CONSULTARNOS!
+                        className={ isIntersecting ? 'span-object animateFade' : 'span-object' }
+                    >
+                        { lang === 'es' ? '¡NO DUDE EN CONSULTARNOS!' : '¡DO NOT HESITATE TO CONTACT US!' }
                     </span>
                 </p>
             </div>

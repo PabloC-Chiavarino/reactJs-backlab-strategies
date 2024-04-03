@@ -3,13 +3,15 @@ import './styles.css'
 
 const Faq = () => {
 
-    const { langData } = useLangContext()
+    const { lang, langData } = useLangContext()
     const { faqData } = langData
 
     return (
         <div className='faq-container'>
             <div className="faq-title-container" >
-                <h2>Preguntas Frecuentes</h2>
+                <h2 key={lang}>
+                    { lang === 'es' ? 'Preguntas Frecuentes' : 'Frequently Asked Questions' }
+                </h2>
             </div >
             {faqData?.map((data) => {
                 return (

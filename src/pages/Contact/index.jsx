@@ -1,4 +1,5 @@
 import { useState, useRef, useEffect } from 'react'
+import useLangContext from '../../hooks/useLangContext'
 import { Bounce, ToastContainer, toast } from 'react-toastify'
 import emailjs from '@emailjs/browser'
 import { Faq } from '../../components'
@@ -7,6 +8,8 @@ import './styles.css'
 import 'react-toastify/dist/ReactToastify.css';
 
 const Contact = () => {
+
+    const { lang } = useLangContext()
     
     const form = useRef()
 
@@ -37,7 +40,7 @@ const Contact = () => {
     }
 
     const throwSuccessPopUp = () => {
-        toast.success('Formulario enviado correctamente!', {
+        toast.success( lang === 'es' ? 'Formulario enviado correctamente!' : 'Form sent successfully!', {
             autoClose: 4000,
             hideProgressBar: false,
             closeOnClick: true,
@@ -69,8 +72,12 @@ const Contact = () => {
     return (
         <section className="contact-section">
             <div className="titleInfo-container" style={{ marginTop: '0' }} >
-                <h2 className='title'>Contáctanos</h2>
-                <h3 className='info'>Completá el formulario y te enviaremos una propuesta a tu medida</h3>
+                <h2 className='title' key={lang}>
+                    {lang === 'es' ? 'Contactanos' : 'Contact Us'}
+                </h2>
+                <h3 className='info' key={lang+1}>
+                    {lang === 'es' ? 'Completá el formulario y te enviaremos una propuesta a tu medida' : 'Complete the form and we will send you a proposal to your terms'}    
+                </h3>
             </div>
             <ToastContainer />
             <div className='form-container gradient-border'>
@@ -78,11 +85,13 @@ const Contact = () => {
                 <form ref={form} onSubmit={sendEmail}>
                     <span>
                         <div>
-                            <label htmlFor="name">Nombre</label>
+                            <label htmlFor="name" key={lang+2}>
+                                {lang === 'es' ? 'Nombre' : 'Name'}
+                            </label>
                             <input
                                 id='name'
                                 type="text"
-                                placeholder='Juan'
+                                placeholder={lang === 'es' ? 'Juan' : 'John'}
                                 name='name'
                                 required
                                 autoComplete='on'
@@ -95,7 +104,7 @@ const Contact = () => {
                             <input
                                 id='email'
                                 type="text"
-                                placeholder='juan@gmail.com'
+                                placeholder={lang === 'es' ? 'juan@gmail.com' : 'john@gmail.com'}
                                 name='email'
                                 required
                                 autoComplete='on'
@@ -106,9 +115,13 @@ const Contact = () => {
                     </span>
                     <span>
                         <div>
-                            <h4 htmlFor="">¿Tenés experiencia en trading?</h4>
+                            <h4 htmlFor="" key={lang+3}>
+                                { lang === 'es' ? '¿Tenés experiencia en trading?' : '¿Do you have trading experience?' }
+                            </h4>
                             <span>
-                                <label htmlFor="tExpY">Sí</label>
+                                <label htmlFor="tExpY" key={lang+4}>
+                                    { lang === 'es' ? 'Si' : 'Yes' }
+                                </label>
                                 <input
                                     id='tExpY'
                                     type="radio"
@@ -117,7 +130,7 @@ const Contact = () => {
                                     value='Sí'
                                     required
                                 />
-                                <label htmlFor="tExpN">No</label>
+                                <label htmlFor="tExpN" >No</label>
                                 <input
                                     id='tExpN'
                                     type="radio"
@@ -129,7 +142,9 @@ const Contact = () => {
                             </span>
                         </div>
                         <div>
-                            <h4>¿Cuántos activos te gustaría testear?</h4>
+                            <h4 key={lang+5}>
+                                { lang === 'es' ? '¿Cuantos activos necesitas testear?' : 'How many assets need to test?' }
+                            </h4>
                             <span>
                                 <label htmlFor='actives1'>1-3</label>
                                 <input
@@ -137,7 +152,8 @@ const Contact = () => {
                                     type="radio"
                                     name='actives'
                                     onClick={handleOnChange}
-                                    value='1-3'                                    required
+                                    value='1-3'                                    
+                                    required
                                 />
                                 <label htmlFor='actives2'>4-10</label>
                                 <input
@@ -154,23 +170,29 @@ const Contact = () => {
                                     type="radio"
                                     name='actives'
                                     onClick={handleOnChange}
-                                    value='10+'                                    required
+                                    value='10+'
+                                    required
                                 />
                             </span>
                         </div>
                     </span>
-                    <label htmlFor='message'>Tu mensaje</label>
+                    <label htmlFor='message' key={lang+6}>
+                        {lang === 'es' ? 'Tu mensaje' : 'Your message'}
+                    </label>
                     <textarea
                         id='message'
                         name="message"
                         minLength="20" cols=""
                         rows=""
-                        placeholder='Mensaje'
+                        placeholder={lang === 'es' ? 'Escribe aquí...' : 'Write here...'}
                         required
                         onChange={handleOnChange}
                         value={formData.message}
+                        key={lang+7}
                     />
-                    <button type='submit' className= {isDisabled ? 'submit-button disabled' : 'submit-button'} disabled={isDisabled} >Enviar</button>
+                    <button type='submit' className= {isDisabled ? 'submit-button disabled' : 'submit-button'} disabled={isDisabled} key={lang+8} >
+                        {lang === 'es' ? 'Enviar' : 'Send'}
+                    </button>
                 </form>
                 <div className="form-subcontainer">
                     <img className='gradient-border-bottom' style={{ height: '556px' }} src={contactImg} alt="" />

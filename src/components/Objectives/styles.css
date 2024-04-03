@@ -69,12 +69,13 @@
 .title-object {
     font-size: 3.5rem;
     font-weight: 800;
+    width: 290px;
 }
 
 .p-object {
     width: 40%;
     font-size: 1.5rem;
-    margin-top: 5rem;
+    margin-top: 2.5rem;
     line-height: 2.5rem;
 }
 
