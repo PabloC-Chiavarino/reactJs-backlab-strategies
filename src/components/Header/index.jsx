@@ -1,10 +1,14 @@
 import { Link } from 'react-router-dom';
+import useLangContext from '../../hooks/useLangContext';
 import LangSwitcher from '../LangSwitcher';
 import { brandLogo } from '../../assets/img';
-import { twitter, facebook, instagram, linkedin, menu } from '../../assets/icons';
+import { twitter, facebook, instagram, linkedin } from '../../assets/icons';
 import './styles.css';
 
 const Header = () => {
+
+  const { lang } = useLangContext();
+
   return (
     <header>
       <nav>
@@ -13,15 +17,34 @@ const Header = () => {
           <div className="logo">
             <span>
               <Link style={{ textDecoration: 'none', color: '#252b42' }} to="/">
-                <img src={brandLogo} className='logo' />
+                <img src={brandLogo} className='logo' alt='logo' />
               </Link>
             </span>
           </div>
           <ul className="nav-links">
-            <li><Link to="/">Home</Link></li>
-            <li><Link to="/services">Services</Link></li>
-            <li><Link to="/about">About Us</Link></li>
-            <li><Link to="/contact">Contact</Link></li>
+            <li key={lang+0}>
+              <Link to="/">
+                {lang === 'es' ? 'Inicio' : 'Home'}
+              </Link>
+            </li>
+            <li
+             key={lang+1}>
+              <Link to="/services">
+                {lang === 'es' ? 'Servicios' : 'Services'}
+              </Link>
+            </li>
+            <li
+             key={lang+2}>
+              <Link to="/about">
+                {lang === 'es' ? 'Sobre Nosotros' : 'About Us'}
+              </Link>
+            </li>
+            <li
+             key={lang+3}>
+              <Link to="/contact">
+                {lang === 'es' ? 'Contacto' : 'Contact Us'}
+              </Link>
+            </li>
           </ul>
           <div className="social-icons">
             <a href="https://twitter.com/BacklabStr" target='blank'><img src={twitter} alt="twitter" /></a>
