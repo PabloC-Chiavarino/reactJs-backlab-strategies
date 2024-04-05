@@ -4,8 +4,8 @@ import { Bounce, ToastContainer, toast } from 'react-toastify'
 import emailjs from '@emailjs/browser'
 import { Faq } from '../../components'
 import { contactImg, socialMedia } from '../../assets/img'
-import './styles.css'
 import 'react-toastify/dist/ReactToastify.css';
+import './styles.css'
 
 const Contact = () => {
 
@@ -24,10 +24,11 @@ const Contact = () => {
     const [isDisabled, setIsDisabled] = useState(true)
 
     useEffect(() => {
-        formData.name && formData.email && formData.message !== '' ?
+
+        formData.name && formData.email && formData.message && formData.tradingExp && formData.actives !== '' ?
         setIsDisabled(false) : setIsDisabled(true)
-    }, [formData]
-)
+    
+    }, [formData])
 
     const handleOnChange = (e) => {     
             
@@ -190,7 +191,7 @@ const Contact = () => {
                         value={formData.message}
                         key={lang+7}
                     />
-                    <button type='submit' className= {isDisabled ? 'submit-button disabled' : 'submit-button'} disabled={isDisabled} key={lang+8} >
+                    <button type='submit' className= 'submit-button' disabled={isDisabled} key={lang+8} >
                         {lang === 'es' ? 'Enviar' : 'Send'}
                     </button>
                 </form>
