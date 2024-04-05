@@ -19,6 +19,7 @@ const Footer = () => {
                         </p>
                         <Link to="/contact">
                             <button 
+                                onClick={() => window.scrollTo(0, 0)}
                                 data-text= { lang === 'es' ? 'Prueba Ahora!' : 'Try Now!' }
                                 style={ lang === 'es' ? { paddingLeft: '10px' } : { paddingLeft: '0' } }
                                 key={lang+17}>
