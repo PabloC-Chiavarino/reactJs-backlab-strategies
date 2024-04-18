@@ -141,6 +141,28 @@
     top: 2px;
 }
 
+@media (992px <=width <=1024px) {
+    
+    .section-footer .icono-regalo {
+        width: 95px;
+        margin-left: 1.5rem;
+    }
+
+    .section-footer h2 {
+        font-size: 2rem;
+    }
+
+    .section-footer .p-prueba {
+        font-size: 1.15rem;
+        line-height: 1.7;
+    }
+
+    .section-footer button {
+        width: 200px;
+        margin-right: 1.5rem;
+    }
+}
+
 @media (1200px <=width <=1365px) {
 
     .section-footer .rectangulo {

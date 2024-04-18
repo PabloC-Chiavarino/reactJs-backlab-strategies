@@ -24,3 +24,9 @@
         cursor: pointer;
     }
 }
+
+@media (min-width: 992px) and (max-width: 1024px) {
+    .lang-toggle-switcher{
+        right: 5rem;
+    }
+}

@@ -69,7 +69,6 @@ main {
 
 .green-button-calendly {
     border-radius: 3rem;
-    padding: 10px 20px;
     cursor: pointer;
     font-weight: bold;
     height: 47px;
@@ -120,7 +119,7 @@ main {
     font-weight: bold;
     height: 47px;
     width: 216px;
-    font-family: Montserrat;
+    font-family: Montserrat, sans-serif;
     font-size: 1rem;
     margin-top: 2.5rem;
     transition: 0.5s;
@@ -170,6 +169,8 @@ main {
     width: 790px;
     height: 430px;
     background-image: url(../../assets/img/contenedor-banner.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
     position: relative;
     top: 1.5rem;
     transition: 0.4s;
@@ -204,9 +205,9 @@ main {
 
 .lineal-vector {
     background-image: url(../../assets/img/vector-lineal.svg);
+    background-repeat: no-repeat;
     width: 790px;
     height: 365px;
-    background-repeat: no-repeat;
     position: relative;
     top: 12%;
     left: 2%;
@@ -224,6 +225,59 @@ main {
 .banner-text {
     color: #252b42;
     font-size: 1.5rem;
+}
+
+@media (min-width: 992px) and (max-width: 1024px) {
+    .section-home {
+        background-position-x: -11rem;
+    }
+    
+    .home-title {
+        font-size: 3.25rem;
+    }
+
+    .home-subtitle{
+        font-size: 1.25rem;
+    }
+
+    .pantallas-home {
+        top: 4.5rem;
+        right: 14.5rem;
+        width: 620px;
+    }
+
+    .home-cards-container {
+        column-gap: 0;
+        margin-right: 0;
+        grid-template-columns: repeat(2, 350px);
+    }
+
+    .main-card {
+        width: 300px;
+    }
+
+    .banner-container{
+        width: 690px;
+        height: 390px;
+    }
+
+    .lineal-vector {
+        background-size: cover;
+        width: 628px;
+        height: 305px;
+    }
+
+    .banner-title {
+        font-size: 2.5rem;
+    }
+
+    .banner-text {
+        font-size: 1.25rem;
+    }
+
+    .blue-button{
+        margin-top: 1.8rem;
+    }
 }
 
 @media (min-width: 1600px) and (max-width: 1900px) {

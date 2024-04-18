@@ -84,3 +84,29 @@ nav label {
     padding-bottom: 4px;
     width: 100%;
 }
+
+.line {
+    width: 82%;
+    position: absolute;
+    margin-top: 1rem;
+}
+
+@media (min-width: 992px) and (max-width: 1024px) {
+    .nav-links {
+        padding-left: 0;
+        gap:20px;
+        font-size: 15px;
+    }
+
+    .logo{
+        width: 175px;
+    }
+
+    .social-icons {
+        padding-right: 5rem;
+    }
+
+    .line {
+        width: 75%;
+    }
+}

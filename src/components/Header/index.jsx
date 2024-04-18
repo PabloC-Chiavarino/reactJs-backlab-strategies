@@ -53,7 +53,7 @@ const Header = () => {
             <a href="https://www.linkedin.com/company/101579217/admin/feed/posts/?feedType=following" target='blank'><img src={linkedin} alt="linkedin" /></a>
           </div>
         </div>
-          <hr style={{width: '82%', position: 'absolute', marginTop: '1rem'}} />
+          <hr className="line" />
       </nav>
       <LangSwitcher />
     </header>
