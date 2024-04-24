@@ -133,3 +133,24 @@ section {
     color: #252b42;
     margin-top: 0;
 }
+
+@media (min-width: 992px) and (max-width: 1024px) {
+
+    .about-card {
+        width: 450px;
+        height: 390px;
+    }
+
+    .cards {
+        gap: 1.5rem;
+    }
+
+    .team {
+        width: 860px;
+    }
+
+    .team-detail {
+        width: 23rem;
+    }
+
+}
