@@ -40,7 +40,7 @@ const Services = () => {
           </div>
           <a
             className='primary-banner-button' 
-            style={ lang === 'es' ? { right: '-40%', width: '38rem' } : { right: '-50%', width: '27rem' }} 
+            style={ lang === 'es' ? { width: '38rem' } : { width: '27rem' }} 
             href="https://wa.me/5492281300940" 
             target="_blank" 
             rel="noopener noreferrer"
@@ -81,7 +81,7 @@ const Services = () => {
           </div>
           <a 
             className='primary-banner-button'
-            style={ lang === 'es' ? { right: '-40%', width: '38rem' } : { right: '-50%', width: '27rem' }}
+            style={ lang === 'es' ? { width: '38rem' } : { width: '27rem' }}
             href="https://wa.me/5492281300940"
             target="_blank"
             rel="noopener noreferrer"

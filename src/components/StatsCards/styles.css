@@ -52,7 +52,8 @@
 
 .stat-card img {
   width: 100%;
-  height: 50%
+  height: 50%;
+  position: relative;
 }
 
 .stat-card-title {
@@ -69,4 +70,18 @@
   bottom: 5.5rem;
   font-weight: 500;
   padding: 0 3.5rem 0 3.5rem;
+}
+
+@media (min-width: 992px) and (max-width: 1024px) {
+  .stat-card {
+    width: 430px;
+  }
+
+  .stat-card img {
+    bottom: 1.4rem;
+  }
+
+  .stat-card-title {
+    bottom: 3.5rem
+  }
 }

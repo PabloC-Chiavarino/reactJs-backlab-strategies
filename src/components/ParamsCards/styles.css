@@ -80,6 +80,20 @@
 }
 
 
+@media (min-width: 992px) and (max-width: 1024px) {
+  .customizable-card {
+    width: 430px;
+  }
+
+  .customizable-card img {
+    bottom: 1.4rem;
+  }
+
+  .customizable-card-title {
+    bottom: 3.5rem
+  }
+}
+
 @media (min-width: 1200px) and (max-width: 1365px){
   .section-customizable {
     min-height: 126dvh;

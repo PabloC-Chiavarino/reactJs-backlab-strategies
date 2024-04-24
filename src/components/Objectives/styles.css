@@ -90,6 +90,17 @@
     opacity: 0;
 }
 
+@media (min-width: 992px) and (max-width: 1200px) {
+    
+    .section-objectivos {
+        margin-bottom: -6%;
+        
+        &::before {
+            left: 5rem;
+        }
+    }
+}
+
 @media (min-width: 1200px) and (max-width:1300px) {
     .section-objectivos::before {
         left: 20rem;
