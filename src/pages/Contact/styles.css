@@ -189,3 +189,35 @@ textarea {
         cursor: not-allowed;
     }
 }
+
+
+@media (992px <= width <= 1024px) {
+    
+    .form-container {
+        width: fit-content;
+    }
+
+    form {
+        width: 600px;
+    }
+
+    form span {
+        gap: 1.5rem;
+    }
+    
+    #actives1, #actives2, #actives3 {
+        width: 1rem;
+    }
+
+    div span label {
+        width: 2.5rem;
+    }
+
+    #name, #email {
+        width: 15rem;
+    }
+
+    #message {
+        width: 504px;
+    }
+}

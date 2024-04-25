@@ -13,7 +13,7 @@ const Contact = () => {
     
     const form = useRef()
 
-    const [ formData, setFormData] = useState({
+    const [ formData, setFormData ] = useState({
         name: '',
         tradingExp: '',
         actives: '',
