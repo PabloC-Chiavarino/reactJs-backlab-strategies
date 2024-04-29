@@ -135,7 +135,7 @@ const Services = () => {
       <article>
         <h1
           className='title-services'
-          style={{ marginTop: '16%' }}
+          style={{ marginTop: '25%' }}
           key={lang+13}
           >
           { lang === 'es' ? 'Parametrización para el Análisis' : 'Parameterization for Analysis'}

@@ -141,6 +141,40 @@
     top: 2px;
 }
 
+@media ( 768px <= width <=991px) {
+    .section-footer .rectangulo {
+        width: 95%;
+        height: 210px;
+    }
+
+    .section-footer .icono-regalo {
+        width: 100px;
+        margin-right: 5.5rem;
+        top: 1.5rem;
+        left: 1.5rem;
+        position: relative;
+    }
+
+    .section-footer h2 {
+        font-size: 1.75rem;
+        right: 4rem;
+        top: 2.5rem;
+        width: 200px;
+    }
+
+    .section-footer .p-prueba {
+        position: absolute;
+        font-size: 1.25rem;
+        top: 1rem;
+        right: 7rem;
+    }
+
+    .section-footer button {
+        position: relative;
+        top: 2.75rem;
+        right: 1.5rem;
+    }
+}
 @media (992px <=width <=1024px) {
     
     .section-footer .icono-regalo {

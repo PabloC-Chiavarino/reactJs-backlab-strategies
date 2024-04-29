@@ -91,6 +91,36 @@ nav label {
     margin-top: 1rem;
 }
 
+@media (min-width: 768px) and (max-width: 991px) {
+    
+    .logo {
+        width: 180px;
+        padding-left: 0.5rem;
+    }
+
+    nav {
+        width: 100vw;
+    }
+    
+    .nav-links {
+        padding-left: 3rem;
+        gap: 1rem;
+    }
+
+    .nav-links li {
+        min-width: fit-content;
+    }
+
+    .line {
+        width: 100vw;
+        margin-top: 3%;
+    }
+
+    .social-icons {
+        padding-left: 5rem;
+    }
+}
+
 @media (min-width: 992px) and (max-width: 1024px) {
     .nav-links {
         padding-left: 0;

@@ -357,6 +357,85 @@ html {
   color: #6315FF;
 }
 
+@media (min-width: 768px) and (max-width: 991px) {
+  .title-services,
+  .subtitle-services {
+    font-size: 2.25rem;
+  }
+
+  .title-services span {
+    font-size: 1.25rem;
+  }
+
+  .p-services {
+    font-size: 1.25rem;
+    line-height: 2.25rem;
+  }
+
+  .primary-banner-container {
+    width: 740px;
+    height: 400px;
+    background-size: 112%;
+    overflow: hidden;
+
+    &::before {
+      width: 740px;
+      height: 400px;
+      background-size: 112%;
+    }
+
+    &:hover {
+      
+      background-size: 117%;
+      
+      .primary-banner-button {
+        right: -30%;
+      }
+            
+      &::before{
+        background-size: 117%;
+      }
+    }
+  }
+
+  .primary-banner-button {
+    font-size: .85rem;
+    width: 30rem !important;
+
+    &::before {
+      position: relative;
+      height: 38px;
+    }
+
+    &:hover {
+      right: 0;
+    }
+  }
+
+  .primary-banner-button img {
+    left: 2rem;
+    width: 23px;
+    height: 23px;
+  }
+
+  .primary-banner-text h3 {
+    margin-top: 1.25rem;
+    font-size: 2.25rem;
+  }
+
+  .primary-banner-text h4 {
+    font-size: 1.2rem;
+    line-height: 2rem;
+    margin-bottom: 0;
+  }
+
+  .primary-banner-text p {
+    margin-top: 3%;
+    line-height: 1.7rem;
+    font-size: .9rem;
+  }
+}
+
 @media (min-width: 992px) and (max-width: 1024px) {
 
   .primary-banner-button {
@@ -460,7 +539,6 @@ html {
   margin-top: 8.5rem;
   width: 30%;
 }
-
 }
 
 @media (min-width: 1920px) {
