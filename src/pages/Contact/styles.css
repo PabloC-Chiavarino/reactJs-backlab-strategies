@@ -191,6 +191,51 @@ textarea {
 }
 
 
+@media (768px <= width <= 991px) {
+
+    .info {
+        font-size: 23px;
+    }
+
+    form {
+        padding: 2rem 4rem 2rem 3rem;
+    }
+
+    form :nth-child(2) {
+        gap: 0;
+    }
+
+    form span div {
+        width: 90%;
+    }
+
+    .form-container {
+        width: 90%;
+    }
+
+    .form-subcontainer {
+        display: none;
+    }
+
+    input {
+        width: 85%;
+    }
+
+    #tExpY, #tExpN, #actives1, #actives2, #actives3 {  
+        margin: 0 1px 0px 30px;
+    }
+
+    textarea {
+        width: 590px;
+    }
+}
+
+@media (800px <= width <= 991px) {
+    textarea {
+        width: 620px;
+    }
+}
+
 @media (992px <= width <= 1024px) {
     
     .form-container {

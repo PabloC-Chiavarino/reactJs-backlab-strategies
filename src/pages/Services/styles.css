@@ -358,6 +358,7 @@ html {
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
+  
   .title-services,
   .subtitle-services {
     font-size: 2.25rem;
@@ -372,16 +373,65 @@ html {
     line-height: 2.25rem;
   }
 
+  .automation-banner-container,
   .primary-banner-container {
+    
     width: 740px;
     height: 400px;
-    background-size: 112%;
     overflow: hidden;
 
+    &:hover {
+      .primary-banner-button {
+        right: -30%;
+      }
+    }
+  }
+
+  .automation-banner-container {
+
+    background-size: 123% !important;
+
     &::before {
+
+      width: 740px;
+      height: 400px;
+      background-size: 123%;
+    }
+
+    &::after {
+
+      bottom: 85%;
+    }
+
+    &:hover {
+
+      background-size: 130% !important;
+
+      &::before {
+
+        background-size: 130%;
+      }
+    }
+  }
+
+  .primary-banner-text {
+    margin-top: 3rem;
+  }
+
+  .primary-banner-container {
+
+    background-size: 112%;
+
+    &::before {
+
       width: 740px;
       height: 400px;
       background-size: 112%;
+    }
+
+    &::after {
+
+      bottom: 92%;
     }
 
     &:hover {
@@ -393,6 +443,7 @@ html {
       }
             
       &::before{
+
         background-size: 117%;
       }
     }
@@ -433,6 +484,30 @@ html {
     margin-top: 3%;
     line-height: 1.7rem;
     font-size: .9rem;
+  }
+
+  .backtesting-container,
+  .services-container,
+  .estadisticas-container {
+    grid-template-columns: repeat(2, 350px)
+  }
+
+  .secondary-banner-text {
+    font-size: 2.8rem;
+    line-height: 4rem;
+  }
+
+  .secondary-banner-bg,
+  .secondary-banner-vector {
+    width: 130dvw
+  }
+
+  .secondary-banner-vector {
+    left: 0;
+}
+
+  .services-arrow-vector {
+    left: 35rem;
   }
 }
 

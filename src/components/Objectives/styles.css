@@ -90,6 +90,38 @@
     opacity: 0;
 }
 
+@media (min-width: 768px) and (max-width: 991px) {
+
+    .section-objectivos {
+    
+        margin-bottom: -30%;
+
+        &::before {
+            left: 9rem;
+        }
+    }
+
+    .title-info-container {
+        margin-left: 3rem;
+        top: 6%;
+    }
+
+    .title-object {
+        font-size: 2.7rem;
+    }
+
+    .p-object {
+        font-size: 1.3rem;
+        margin-top: 1.5rem;
+    }
+
+    .objectives-bg {
+        bottom: 5rem;
+        left: 9rem;
+        scale: 0.8 !important;
+    }
+}
+
 @media (min-width: 992px) and (max-width: 1200px) {
     
     .section-objectivos {

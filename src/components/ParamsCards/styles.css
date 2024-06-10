@@ -79,6 +79,23 @@
   padding: 0 3.5rem 0 3.5rem;
 }
 
+@media (min-width: 768px) and (max-width: 991px) {
+  .section-customizable {
+    min-height: 110dvh;
+  }
+}
+
+@media (min-width: 768px) and (min-height: 1024px) {
+  .section-customizable {
+    min-height: 112dvh;
+  }
+}
+
+@media (min-width: 768px) and (min-height: 1075px) {
+  .section-customizable {
+    min-height: 90dvh;
+  }
+}
 
 @media (min-width: 992px) and (max-width: 1024px) {
   .customizable-card {

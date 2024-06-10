@@ -1,5 +1,5 @@
 section {
-    font-family: Montserrat;
+    font-family: Montserrat, sans-serif;
     color: #252B42;
 }
 
@@ -132,6 +132,34 @@ section {
 .team-name {
     color: #252b42;
     margin-top: 0;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    
+    .cards {
+        gap: 1.5rem;
+    }
+
+    .about-card {
+        height: 375px;
+    }
+
+    .about-card-text {
+        line-height: 1.55rem;
+        margin-top: 3%
+    }
+
+    .team {
+        width: 685px;
+    }
+
+    .team img {
+        width: 300px;
+    }
+
+    .team-detail {
+        width: 18rem;
+    }
 }
 
 @media (min-width: 992px) and (max-width: 1024px) {
