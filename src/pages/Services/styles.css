@@ -357,6 +357,82 @@ html {
   color: #6315FF;
 }
 
+@media (min-width: 360px) and (max-width: 414px) {
+  .primary-banner-container, .automation-banner-container {
+    display: none;
+  }
+
+  .backtesting-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .backtesting-info h3 {
+    font-size: 1.5rem !important;
+  }
+
+  .backtesting-info {
+    text-align: center;
+    height: auto;
+    line-height: 2.5rem;
+  }
+
+  .backtesting-description, .backtesting-main-description {
+    font-size: 1.3rem !important;
+  }
+
+  .secondary-banner-container {
+    margin-top: 5rem;
+    overflow-x: hidden;
+  }
+
+  .secondary-banner-bg {
+    width: auto;
+    height: 450px;
+  }
+
+  .secondary-banner-text {
+    font-size: 3rem;
+  }
+
+  .secondary-banner-vector {
+    width: 285dvw;
+    left: 0;
+  }
+
+  .services-arrow-vector {
+    display: none;
+  }
+
+  .title-services {
+    font-size: 2.5rem;
+  }
+
+  .p-services {
+    margin-top: 2rem;
+  }
+
+  .services-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .service {
+    text-align: center;
+    line-height: 2.5rem;
+    height: auto;
+  }
+
+  .service h3 {
+    font-size: 1.5rem !important;
+  }
+
+  .service p {
+    font-size: 1.3rem !important;
+    line-height: 1.8rem !important;
+  }
+}
+
 @media (min-width: 768px) and (max-width: 991px) {
   
   .title-services,

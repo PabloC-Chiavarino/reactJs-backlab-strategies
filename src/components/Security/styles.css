@@ -103,6 +103,56 @@
     left: 10px;
 }
 
+@media (min-width: 360px) and (max-width: 414px) {
+    .security-img-container {
+        display: none;
+    }
+
+    .security-section {
+        margin-top: 18%;
+    }
+
+    .security-title {
+        width: 80%;
+        font-size: 2.3rem;
+        align-self: center;
+    }
+
+    .security-description {
+        padding-inline: 25px;
+        margin-bottom: 10%;
+    }
+
+    .chars-container {
+        width: 100%;
+        margin-bottom: 18rem;
+    }
+
+    .char-title-container {
+        flex-direction: column;
+    }
+
+    .checkIcon {
+        width: 55px;
+        height: 55px;
+    }
+
+    .char-title {
+        font-size: 2rem;
+        text-align: center;
+        margin-top: 2rem;
+        margin-bottom: .8rem;
+        line-height: 2.5rem;
+        width: 90%;
+    }
+
+    .char-description {
+        font-size: 1.5rem;
+        line-height: 2.5rem;
+        text-align: center;
+    }
+}
+
 @media (min-width: 768px) and (max-width: 991px) {
 
     .security-title {

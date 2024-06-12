@@ -118,17 +118,17 @@ import { historical,acivesDiv,flex,params,analysis,multiplat,realCond,inter,web,
         description: ", minimizando pérdidas durante el trading real."
       },
       {
-        title: "4- Ahorro de tiempo y recursos",
+        title: "3- Ahorro de tiempo y recursos",
         mainDescription: "Automatiza el proceso de evaluación y optimización",
         description: ", ahorrando tiempo y recursos al evitar pruebas manuales."
       },
       {
-        title: "5- Análisis detallado",
+        title: "4- Análisis detallado",
         mainDescription: "Ofrece herramientas para analizar en profundidad los resultados de las pruebas",
         description: ", proporcionando una comprensión más clara del comportamiento de la estrategia."
       },
       {
-        title: "3- Toma de decisiones informada",
+        title: "5- Toma de decisiones informada",
         mainDescription: "Facilita la toma de decisiones basada en datos históricos",
         description: ", aumentando la confianza del trader alejecutar sus estrategias en el mercado real."
       }
@@ -143,15 +143,15 @@ import { historical,acivesDiv,flex,params,analysis,multiplat,realCond,inter,web,
         description: "Realiza cierres deoperaciones automáticamente, garantizando una ejecución eficiente."
       },
       {
-        title: "4- Sin emociones",
+        title: "3- Sin emociones",
         description: "Elimina decisiones emocionales al cerrar operaciones de manera automatizada."
       },
       {
-        title: "5- Gestión de riegos",
+        title: "4- Gestión de riegos",
         description: "Aplica medidas de gestión de riesgos cerrando operaciones según niveles predeterminados."
       },
       {
-        title: "3- Libertad de tiempo",
+        title: "5- Libertad de tiempo",
         description: "Permite dedicar tiempo a otras actividades al automatizar el cierre de operaciones."
       }
     ],

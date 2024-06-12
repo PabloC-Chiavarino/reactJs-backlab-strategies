@@ -149,7 +149,7 @@ const Services = () => {
         </p>
         <span>
           <h2 className="subtitle-services" key={lang+15}>
-            { lang === 'es' ? 'Parémetros por default' : 'Default parameters'}
+            { lang === 'es' ? 'Parámetros por default' : 'Default parameters'}
           </h2>
         </span>
         <div className="services-container">

@@ -79,6 +79,12 @@
   padding: 0 3.5rem 0 3.5rem;
 }
 
+@media (min-width: 360px) and (max-width: 414px) {
+  .subtitle-customizable {
+    margin-top: 10%;
+  }
+}
+
 @media (min-width: 768px) and (max-width: 991px) {
   .section-customizable {
     min-height: 110dvh;

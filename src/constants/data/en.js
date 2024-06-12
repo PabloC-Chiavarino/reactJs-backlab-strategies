@@ -118,17 +118,17 @@ const dataEN = {
         description: ", minimizing losses during actual trading."
       },
       {
-        title: "4- Saving time and resources",
+        title: "3- Saving time and resources",
         mainDescription: "Automate the evaluation and optimization process",
         description: ", saving time and resources by avoiding manual testing."
       },
       {
-        title: "5- Detailed analysis",
+        title: "4- Detailed analysis",
         mainDescription: "Offers tools to analyze test results in depth",
         description: ", providing a clearer understanding of the strategy's behavior."
       },
       {
-        title: "3- Informed decision making",
+        title: "5- Informed decision making",
         mainDescription: "Facilitates decision making based on historical data",
         description: ", increasing the trader's confidence in executing their strategies in the real market."
       }
@@ -143,15 +143,15 @@ const dataEN = {
         description: "Automatically closes operations, guaranteeing efficient execution."
       },
       {
-        title: "4- Without emotions",
+        title: "3- Without emotions",
         description: "Eliminate emotional decisions by closing trades automatically."
       },
       {
-        title: "5- Risk management",
+        title: "4- Risk management",
         description: "Applies risk management measures by closing operations according to predetermined levels."
       },
       {
-        title: "3- Freedom of time",
+        title: "5- Freedom of time",
         description: "It allows you to dedicate time to other activities by automating the closing of operations."
       }
     ],

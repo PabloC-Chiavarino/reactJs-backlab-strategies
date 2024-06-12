@@ -227,6 +227,99 @@ main {
     font-size: 1.5rem;
 }
 
+@media (min-width: 360px) and (max-width: 414px) {
+    
+    .home-title {
+        font-size: 2.7rem;
+        line-height: 3.3rem;
+        margin-bottom: 5px;
+        width: 90vw;
+        top: 2rem;
+        position: relative;
+    }
+
+    .home-subtitle {
+        font-size: 1.3rem;
+        line-height: 2rem;
+        width: 100vw;
+        position: relative;
+        top: 3rem;
+    }
+
+    .button-container {
+        position: relative;
+        top: 3rem;
+    }
+
+    .green-button, .green-button-calendly {
+        width: 150px;
+        height: 35px;
+        font-size: 0.8rem;
+    }
+    
+    .green-button-calendly {
+        font-size: 0.75rem;
+
+        &::before{
+            top: -109px;
+            left: -170%;
+        }
+
+        &:hover {
+            &::before{
+                left: 0%;
+            }
+        }
+    }
+
+    .pantallas-home {
+        display: none;
+    }
+
+    .section-home {
+        background-position-y: -17rem;
+        background-position-x: -4.5rem;
+    }
+
+    .home-cards-title {
+        font-size: 2.3rem;
+    }
+
+    .home-cards-container {
+        display: flex;
+        flex-direction: column;
+        width: 85vw;
+    }
+
+    .main-card {
+        width: 320px;
+        height: 395px;
+        padding-bottom: 10px;
+    }
+
+    .main-card--title {
+        font-size: 1.25rem;
+    }
+
+    .main-card--description {
+        overflow-y: scroll;
+        font-size: 1.35rem;
+        text-align: center;
+        margin-top: 4.5%
+    }
+
+    .main-card--icon {
+        width: 110px;
+    }
+
+    .banner-container{
+        display: none;
+    }
+
+
+}
+
+
 @media (min-width: 768px) and (max-width: 991px) {
     
     .section-home {

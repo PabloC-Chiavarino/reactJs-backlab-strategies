@@ -141,6 +141,45 @@
     top: 2px;
 }
 
+@media ( 360px <= width <= 414px) {
+    
+    .section-footer {
+        padding: 0;
+        margin-bottom: -50px;
+    }
+    
+    .section-footer .rectangulo {
+        width: 100dvw;
+        height: 450px;
+    }
+
+    .section-footer .contenido {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .section-footer h2 {
+        right: 0;
+    }
+
+    .section-footer .icono-regalo {
+        margin-right: 0;
+    }
+
+    .section-footer .p-prueba {
+        width: auto;
+        right: 0;
+    }
+
+    .gradient-border-footer {
+        border-radius: 10px;
+    }
+
+    .redes-sociales {
+        bottom: 2rem;
+    }
+}
+
 @media ( 768px <= width <=991px) {
     .section-footer .rectangulo {
         width: 95%;
