@@ -139,7 +139,7 @@
     }
 
     .char-title {
-        font-size: 1.8rem;
+        font-size: 1.4rem;
         text-align: center;
         margin-top: 2rem;
         margin-bottom: .8rem;
@@ -148,7 +148,7 @@
     }
 
     .char-description {
-        font-size: 1.3rem;
+        font-size: 1.2rem;
         line-height: 2.5rem;
         text-align: center;
         padding-inline: 10%;
