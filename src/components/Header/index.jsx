@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import useLangContext from '../../hooks/useLangContext';
 import LangSwitcher from '../LangSwitcher';
@@ -8,10 +9,15 @@ import SlideMenu from '../SlideMenu';
 
 const Header = () => {
 
+  const [ showMenu, setShowMenu ] = useState(false)
+
   const { lang } = useLangContext();
 
-  return (
+  const handleShowMenu = () => {
+    setShowMenu(!showMenu)
+  }
 
+  return (
     <>
       <header>
         <nav>
@@ -59,10 +65,15 @@ const Header = () => {
         </nav>
         <LangSwitcher />
         <div className="toggle-container">
-          <img className='toggle' src={slideMenuToggle} alt="" />
+          <img 
+            onClick={handleShowMenu}
+            className='toggle'
+            src={slideMenuToggle}
+            alt=""
+          />
         </div>
       </header>
-      <SlideMenu />
+      <SlideMenu show={showMenu} handleShowMenu={handleShowMenu} />
     </>
   );
 };

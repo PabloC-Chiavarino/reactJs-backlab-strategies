@@ -1,0 +1,37 @@
+.slide-menu {
+    display: none;
+    right: 0;
+    width: 55%;
+    height: 100%;
+    background-color: #9661FE;
+    position: fixed;
+    z-index: 2;
+    opacity: .9 !important;
+    transition: 0.5s ease;
+    transform: translate(100%);
+}
+
+.slide-nav-links {
+    display: flex;
+    flex-direction: column;
+    gap: 3.5rem;
+    font-size: 1.4rem;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    top: 3rem;
+    position: relative; 
+    list-style: none;
+    }
+    
+    .slide-nav-links a {    
+    color: #F7F4FE;
+    text-decoration: none;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+@media (min-width: 360px) and (max-width: 414px) {
+    .slide-menu {
+        display: block;
+    }
+}

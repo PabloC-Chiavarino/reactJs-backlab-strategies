@@ -102,7 +102,7 @@ nav label {
 
     .line {
         width: 75dvw;
-        margin-top: .5rem;
+        margin-top: .6rem;
     }
 
     .nav-links {
@@ -116,7 +116,8 @@ nav label {
     .toggle-container {
         display: block;
         position: relative;
-        right: 5px;
+        left: 20px;
+        top: 1px;
     }
 
     .toggle {
