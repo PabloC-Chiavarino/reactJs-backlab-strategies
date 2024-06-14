@@ -151,6 +151,7 @@
     .section-footer .rectangulo {
         width: 100dvw;
         height: 450px;
+        margin-bottom: -5rem;
     }
 
     .section-footer .contenido {
@@ -169,6 +170,9 @@
     .section-footer .p-prueba {
         width: auto;
         right: 0;
+        font-size: 1.3rem;
+        padding-inline: 1rem;
+        line-height: 2.1rem;
     }
 
     .gradient-border-footer {

@@ -91,14 +91,38 @@ nav label {
     margin-top: 1rem;
 }
 
+.toggle-container {
+    display: none;
+}
+
 @media (min-width: 360px) and (max-width: 414px) {
     .logo {
         width: 220px;
     }
 
     .line {
-        width: 83dvw;
+        width: 75dvw;
         margin-top: .5rem;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .social-icons {
+        display: none;
+    }
+
+    .toggle-container {
+        display: block;
+        position: relative;
+        right: 5px;
+    }
+
+    .toggle {
+        position: relative;
+        top: 4.2rem;
+        width: 45px;
     }
 }
 

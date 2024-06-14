@@ -246,6 +246,15 @@ main {
         top: 3rem;
     }
 
+    .home-cards-title {
+        font-size: 2rem;
+    }
+
+    .home-cards-description {
+        font-size: 1.35rem;
+        width: 90vw;
+    }
+
     .button-container {
         position: relative;
         top: 3rem;

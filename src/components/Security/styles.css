@@ -114,13 +114,14 @@
 
     .security-title {
         width: 80%;
-        font-size: 2.3rem;
+        font-size: 2rem;
         align-self: center;
     }
 
     .security-description {
         padding-inline: 25px;
         margin-bottom: 10%;
+        font-size: 1.3rem;
     }
 
     .chars-container {
@@ -133,12 +134,12 @@
     }
 
     .checkIcon {
-        width: 55px;
-        height: 55px;
+        width: 50px;
+        height: 50px;
     }
 
     .char-title {
-        font-size: 2rem;
+        font-size: 1.8rem;
         text-align: center;
         margin-top: 2rem;
         margin-bottom: .8rem;
@@ -147,9 +148,10 @@
     }
 
     .char-description {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
         line-height: 2.5rem;
         text-align: center;
+        padding-inline: 10%;
     }
 }
 
