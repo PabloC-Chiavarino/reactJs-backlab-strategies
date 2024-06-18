@@ -98,7 +98,7 @@
   }
 
   .p-estadisticas {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     line-height: 2.2rem;
     margin-top: 1.5rem;
   }
@@ -126,6 +126,35 @@
     font-size: 1.2rem !important;
     line-height: 2.2rem;
   }
+
+  .stats-text {
+    font-size: 1.2rem;
+  }
+
+  .stats-cards-container {
+    flex-direction: column;
+    margin-bottom: 55%;
+  }
+
+  .stat-card {
+    width: 360px;
+    height: 380px;
+  }
+
+  .stat-card-title {
+    bottom: .5rem;
+  }
+
+  .stat-card-text {
+    bottom: 2.5rem;
+  }
+
+  .stat-card img {
+    width: 100%;
+    height: 35%
+  }
+
+  
 }
 
 @media (992px<=width<=1024px) {

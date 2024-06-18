@@ -1,7 +1,7 @@
 .slide-menu {
     display: none;
     right: 0;
-    width: 42%;
+    width: 50%;
     height: 100%;
     background-color: #9661FE;
     position: fixed;
@@ -15,6 +15,7 @@
     display: flex;
     flex-direction: column;
     gap: 3.3rem;
+    padding-inline: 2rem;
     font-size: 1.2rem;
     font-family: 'Montserrat', sans-serif;
     text-align: center;
