@@ -14,7 +14,7 @@ const Services = () => {
         <h1 className='title-services' key={lang}>
           {lang === 'es' ? 'Nuestros Servicios' : 'Our Services'}
         </h1>
-        <span style={{ fontSize: '1.5rem', fontWeight: '700' }} key={lang+1}>
+        <span style={{ fontSize: '1.5rem', fontWeight: '700', lineHeight: '2.5rem' }} key={lang+1}>
           {lang === 'es' ? '¡Conocé el plan que mejor se adapte a lo que necesitás!' : 'Know the plan that best fits your needs!'}
         </span>
         <p 

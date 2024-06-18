@@ -80,8 +80,43 @@
 }
 
 @media (min-width: 360px) and (max-width: 414px) {
+  
+  .section-customizable {
+    background-size: contain;
+  }
+
+  .title-customizable {
+    font-size: 2rem;
+  }
+  
   .subtitle-customizable {
     margin-top: 10%;
+    font-size: 1.5rem;
+  }
+
+  .customizable-container {
+    top: 9rem;
+  }
+
+  .customizable-card {
+    width: 350px;
+    height: 365px;
+  }
+
+  .customizable-card img {
+    height: 36%;
+  }
+
+  .customizable-card-title {
+    font-size: 1.4rem;
+    margin-top: 3.5rem;
+  }
+
+  .customizable-card-text {
+    font-size: 1.2rem;
+    line-height: 1.7rem;
+    padding: 0 2rem 0 2rem;
+    margin-top: 3.5rem;
   }
 }
 

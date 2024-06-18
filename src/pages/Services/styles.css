@@ -358,6 +358,10 @@ html {
 }
 
 @media (min-width: 360px) and (max-width: 414px) {
+  .section-services {
+    margin-top: 4rem;
+  }
+  
   .primary-banner-container, .automation-banner-container {
     display: none;
   }
@@ -368,7 +372,7 @@ html {
   }
 
   .backtesting-info h3 {
-    font-size: 1.5rem !important;
+    font-size: 1.4rem !important;
   }
 
   .backtesting-info {
@@ -405,16 +409,24 @@ html {
   }
 
   .title-services {
-    font-size: 2.5rem;
+    padding-inline: 10px;
+    font-size: 2rem;
+  }
+
+  .subtitle-services {
+    padding-inline: 10px;
+    font-size: 1.8rem !important;
   }
 
   .p-services {
     margin-top: 2rem;
+    font-size: 1.4rem;
   }
 
   .services-container {
     display: flex;
     flex-direction: column;
+    row-gap: 0;
   }
 
   .service {
@@ -424,12 +436,12 @@ html {
   }
 
   .service h3 {
-    font-size: 1.5rem !important;
+    font-size: 1.4rem !important;
   }
 
   .service p {
     font-size: 1.3rem !important;
-    line-height: 1.8rem !important;
+    line-height: 2.2rem !important;
   }
 }
 

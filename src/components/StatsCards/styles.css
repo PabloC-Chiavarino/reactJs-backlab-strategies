@@ -10,14 +10,14 @@
   text-align: center;
   font-weight: bold;
   font-size: 2.5rem;
-  font-family: 'Montserrat';
+  font-family: 'Montserrat', sans-serif;
   margin-top: 8%;
   color: #6315FF;
 }
 
 .stats-text {
   width: 80%;
-  font-family: 'Montserrat';
+  font-family: 'Montserrat', sans-serif;
   font-size: 1.5rem;
   text-align: center;
   margin-top: 2%;
@@ -70,6 +70,17 @@
   bottom: 5.5rem;
   font-weight: 500;
   padding: 0 3.5rem 0 3.5rem;
+}
+
+@media (min-width: 360px) and (max-width: 414px) {
+  .stats-subtitle {
+    font-size: 2rem;
+  }
+
+  .stats-text {
+    font-size: 1.3rem;
+    margin-top: 2rem;
+  }
 }
 
 @media (min-width: 992px) and (max-width: 1024px) {
