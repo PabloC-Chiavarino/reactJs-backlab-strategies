@@ -3,7 +3,7 @@
     right: 0;
     width: 50%;
     height: 100%;
-    background-color: #9661FE;
+    background-color: #6320EC;
     position: fixed;
     z-index: 2;
     opacity: .9 !important;
@@ -19,7 +19,7 @@
     font-size: 1.2rem;
     font-family: 'Montserrat', sans-serif;
     text-align: center;
-    top: 3rem;
+    top: 7rem;
     position: relative; 
     list-style: none;
     }
