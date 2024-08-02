@@ -96,13 +96,19 @@ nav label {
 }
 
 @media (min-width: 360px) and (max-width: 414px) {
+    
+    header {
+        height: 129px;
+        width: 100%;
+        padding-left: 2%;
+    }
+    
     .logo {
-        width: 220px;
+        width: 275px;
     }
 
     .line {
         width: 75dvw;
-        margin-top: .6rem;
     }
 
     .nav-links {
@@ -121,8 +127,9 @@ nav label {
 
     .toggle {
         position: relative;
-        top: 4.7rem;
-        width: 36px;
+        top: 5.4rem;
+        width: 47px;
+        right: 8px;
     }
 }
 

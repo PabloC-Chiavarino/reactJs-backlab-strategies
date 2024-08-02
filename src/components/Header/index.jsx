@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import useLangContext from '../../hooks/useLangContext';
 import LangSwitcher from '../LangSwitcher';
 import { brandLogo } from '../../assets/img';
-import { twitter, facebook, instagram, linkedin, slideMenuToggle } from '../../assets/icons';
+import { twitter, facebook, instagram, linkedin, openMenu } from '../../assets/icons';
 import './styles.css';
 import SlideMenu from '../SlideMenu';
 
@@ -68,7 +68,7 @@ const Header = () => {
           <img 
             onClick={handleShowMenu}
             className='toggle'
-            src={slideMenuToggle}
+            src={openMenu}
             alt=""
           />
         </div>
