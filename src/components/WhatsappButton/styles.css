@@ -30,7 +30,33 @@
 }
 
 
-@media (min-width: 360px) and (max-width: 414px) {
+@media (min-width: 360px) and (max-width: 413px) {
+    .whatsapp-button {
+        width: 65px;
+        height: 65px;
+        top: 87.5%;
+        left: 17rem;
+        
+        .whatsapp-icon {
+            width: 40px !important;
+            height: 40px !important;
+            position: relative;
+            top: 2.2px;
+        }
+
+        &:hover {
+            width: 75px;
+            height: 75px;
+            .whatsapp-icon {
+                width: 45px !important;
+                height: 45px !important;
+            }
+        }
+    }
+
+}
+
+@media (min-width: 414px) and (max-width: 767px) {
     .whatsapp-button {
         width: 65px;
         height: 65px;

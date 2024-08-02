@@ -25,7 +25,13 @@
     }
 }
 
-@media (min-width: 360px) and (max-width: 414px) {
+@media (min-width: 360px) and (max-width: 413px) {
+    .lang-toggle-switcher div img {
+        width: 28px;
+    }
+}
+
+@media (min-width: 414px) and (max-width: 767px) {
     .lang-toggle-switcher div img {
         width: 32px;
     }

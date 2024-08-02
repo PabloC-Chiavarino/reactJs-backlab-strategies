@@ -297,7 +297,9 @@ main {
     .home-cards-container {
         display: flex;
         flex-direction: column;
-        width: 85vw;
+        align-items: center;
+        position: relative;
+        left: 5px;
     }
 
     .main-card {
