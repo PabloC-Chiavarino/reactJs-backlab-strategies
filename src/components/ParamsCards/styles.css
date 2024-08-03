@@ -79,10 +79,13 @@
   padding: 0 3.5rem 0 3.5rem;
 }
 
+
+
 @media (min-width: 360px) and (max-width: 414px) {
   
   .section-customizable {
-    background-size: contain;
+      background-size: contain;
+    background-position-y: 31rem;
   }
 
   .title-customizable {
@@ -113,10 +116,35 @@
   }
 
   .customizable-card-text {
-    font-size: 1.2rem;
     line-height: 1.7rem;
     padding: 0 2rem 0 2rem;
-    margin-top: 3.5rem;
+    margin-top: 3.8rem;
+  }
+}
+
+@media (min-width: 360px) and (min-height: 640px) {
+  .section-customizable {
+    background-size: contain;
+    min-height: 220dvh;
+    background-position-y: 31rem;
+  }
+}
+
+@media (min-width: 360px) and (min-height: 740px) {
+  .section-customizable {
+    min-height: 190dvh;
+  }
+}
+
+@media (min-width: 414px) and (min-height: 736px) {
+  .section-customizable {
+    min-height: 185dvh;
+  }
+}
+
+@media (min-width: 414px) and (min-height: 846px) {
+  .section-customizable {
+    min-height: 160dvh;
   }
 }
 

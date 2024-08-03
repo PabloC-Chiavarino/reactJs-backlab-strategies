@@ -1,7 +1,7 @@
 import useLangContext from '../../hooks/useLangContext.jsx'
 import { whatsapp } from '../../assets/icons/index.js'
 import { ParamsCards, Objectives, Stats, StatsCards } from '../../components/index.js'
-import { bannerBg2, backLabVector2, backLabVectorRight } from '../../assets/img/index.js'
+import {  backLabVector2, backLabVectorRight } from '../../assets/img/index.js'
 import './styles.css'
 
 const Services = () => {
@@ -127,7 +127,6 @@ const Services = () => {
                 <img src={whatsapp} alt="" />
               </a>
           </div>
-          <img className='secondary-banner-bg' src={bannerBg2} alt="" />
           <img className='secondary-banner-vector' src={backLabVector2} alt="" />
           <img className='services-arrow-vector' src={backLabVectorRight} alt="" />
         </div>
