@@ -400,22 +400,36 @@ html {
   }
 
   .secondary-banner-text {
-    font-size: 2.3rem;
-    line-height: 3.8rem;
+    font-size: 2rem;
+    line-height: 3rem;
+    padding: 0 5rem 0 5rem;
+    margin-top: 4rem;
   }
 
   .secondary-banner-vector {
-    width: 40rem;
     left: 0;
-    margin-top: 8rem;
+    margin-top: 14.5rem;
   }
 
   .secondary-banner-button {
-    width: 13rem !important;
+    width: 10rem !important;
+    font-size: 15px;
+
+    &:hover {
+      padding-left: 30px;
+    }
+  }
+
+  .secondary-banner-button img {
+    left: .7rem;
+    width: 20px;
+    height: 20px;
   }
 
   .services-arrow-vector {
-    display: none;
+    right: 0;
+    width: 28%;
+    margin-top: 30px;
   }
 
   .title-services {
@@ -456,6 +470,20 @@ html {
   .service p {
     font-size: 1.2rem !important;
     line-height: 2.2rem !important;
+  }
+}
+
+
+
+@media (min-width: 360px) and (min-height: 640px) {
+  .secondary-banner-vector {
+    margin-top: 15.5rem;
+  }
+}
+
+@media (min-width: 414px) and (min-height: 736px) {
+  .secondary-banner-vector {
+    margin-top: 14rem;
   }
 }
 
