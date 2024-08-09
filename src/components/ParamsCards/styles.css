@@ -122,7 +122,8 @@
   }
 }
 
-@media (min-width: 360px) and (min-height: 640px) {
+@media ( 360px <= width <= 640px ) {
+
   .section-customizable {
     background-size: contain;
     min-height: 220dvh;
@@ -131,6 +132,7 @@
 }
 
 @media (min-width: 360px) and (min-height: 740px) {
+
   .section-customizable {
     min-height: 190dvh;
   }
@@ -148,7 +150,8 @@
   }
 }
 
-@media (min-width: 768px) and (max-width: 991px) {
+@media ( 768px <= width <= 991px ) {
+
   .section-customizable {
     min-height: 110dvh;
   }
@@ -166,7 +169,7 @@
   }
 }
 
-@media (min-width: 992px) and (max-width: 1024px) {
+@media ( 992px <= width <= 1024px ) {
   .customizable-card {
     width: 430px;
   }
@@ -180,13 +183,15 @@
   }
 }
 
-@media (min-width: 1200px) and (max-width: 1365px){
+@media ( 1200px <= width <= 1365px ) {
+
   .section-customizable {
     min-height: 126dvh;
   }
 }
 
 @media (min-width: 1200px) and (min-height: 950px) {
+
   .section-customizable {
     min-height: 103dvh;
   }
@@ -198,7 +203,7 @@
   }
 }
 
-@media (min-width: 1440px) {
+@media ( 1440px <= width ) {
   .section-customizable {
     min-height: 110dvh;
   }
@@ -210,14 +215,14 @@
   }
 }
 
-@media (min-width: 1600px) {
+@media ( 1600px <= width ) {
   .section-customizable {
     background-size: 100dvw;
     min-height: 115dvh;
   }
 }
 
-@media (min-width: 1920px) {
+@media ( 1920px <= width ) {
   .section-customizable {
     background-size: 100dvw;
     min-height: 124dvh;

@@ -8,7 +8,7 @@
 }
 
 .lang-toggle-switcher div img {
-    width: 26px;
+    width: 24px;
     transition: .5s;
 }
 
@@ -25,27 +25,31 @@
     }
 }
 
-@media (min-width: 360px) and (max-width: 413px) {
+@media ( 360px <= width <= 413px ) {
+    
+    .lang-toggle-switcher {
+        right: 0.5rem;
+    }
+
     .lang-toggle-switcher div img {
         width: 28px;
     }
 }
 
-@media (min-width: 414px) and (max-width: 767px) {
+@media ( 413px <= width <= 767px ) {
+    
+    .lang-toggle-switcher {
+        right: .5rem;
+    }
+    
     .lang-toggle-switcher div img {
         width: 32px;
     }
 }
 
-@media (min-width: 768px) and (max-width: 991px) {
+@media ( 768px <= width <= 991px ) {
     .lang-toggle-switcher{
         top: .5rem;
-        right: 0;
-    }
-}
-
-@media (min-width: 992px) and (max-width: 1024px) {
-    .lang-toggle-switcher{
-        right: 5rem;
+        right: 10px;
     }
 }

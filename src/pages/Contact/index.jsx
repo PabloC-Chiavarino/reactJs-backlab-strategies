@@ -115,11 +115,11 @@ const Contact = () => {
                         </div>
                     </span>
                     <span>
-                        <div>
+                        <div className='choose-options'>
                             <h4 htmlFor="" key={lang+3}>
                                 { lang === 'es' ? '¿Tenés experiencia en trading?' : '¿Do you have trading experience?' }
                             </h4>
-                            <span>
+                            <span className='options'>
                                 <label htmlFor="tExpY" key={lang+4}>
                                     { lang === 'es' ? 'Si' : 'Yes' }
                                 </label>
@@ -142,38 +142,44 @@ const Contact = () => {
                                 />
                             </span>
                         </div>
-                        <div>
+                        <div className='choose-options'>
                             <h4 key={lang+5}>
                                 { lang === 'es' ? '¿Cuantos activos necesitas testear?' : 'How many assets need to test?' }
                             </h4>
-                            <span>
-                                <label htmlFor='actives1'>1-3</label>
-                                <input
-                                    id='actives1'
-                                    type="radio"
-                                    name='actives'
-                                    onClick={handleOnChange}
-                                    value='1-3'                                    
-                                    required
-                                />
-                                <label htmlFor='actives2'>4-10</label>
-                                <input
-                                    id='actives2'
-                                    type="radio"
-                                    name='actives'
-                                    onClick={handleOnChange}
-                                    value='4-10'
-                                    required
-                                />
-                                <label htmlFor='actives3'>+10</label>
-                                <input
-                                    id='actives3'
-                                    type="radio"
-                                    name='actives'
-                                    onClick={handleOnChange}
-                                    value='10+'
-                                    required
-                                />
+                            <span className='options'>
+                                <div className="options-subcontainer">
+                                    <label htmlFor='actives1'>1-3</label>
+                                    <input
+                                        id='actives1'
+                                        type="radio"
+                                        name='actives'
+                                        onClick={handleOnChange}
+                                        value='1-3'                                    
+                                        required
+                                    />
+                                </div>
+                                <div className="options-subcontainer">
+                                    <label htmlFor='actives2'>4-10</label>
+                                    <input
+                                        id='actives2'
+                                        type="radio"
+                                        name='actives'
+                                        onClick={handleOnChange}
+                                        value='4-10'
+                                        required
+                                    />
+                                </div>
+                                <div className="options-subcontainer">
+                                    <label htmlFor='actives3'>+10</label>
+                                    <input
+                                        id='actives3'
+                                        type="radio"
+                                        name='actives'
+                                        onClick={handleOnChange}
+                                        value='10+'
+                                        required
+                                    />
+                                </div>    
                             </span>
                         </div>
                     </span>

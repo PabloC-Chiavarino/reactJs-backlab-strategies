@@ -8,13 +8,13 @@ main {
     min-height: 51rem;
     background-image: url(../../assets/img/homepage.svg);
     background-repeat: no-repeat;
-    background-position-y: -10.5rem;
+    background-position-y: -15.5rem;
+    margin-top: 13%;
 }
 
 .home-container {
     width: 585px;
     margin-left: 8%;
-    margin-top: 5%;
 }
 
 .home-title {
@@ -36,8 +36,8 @@ main {
 
 .pantallas-home {
     position: relative;
-    top: 2.5rem;
-    right: 12rem;
+    bottom: 1rem;
+    right: 12.5rem;
 }
 
 .button-container {
@@ -136,6 +136,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 0;
 }
 
 .home-cards-title {
@@ -163,6 +164,7 @@ main {
     margin-top: 0rem;
     column-gap: 3rem;
     margin-right: 3.5%;
+    width: 100%;
 }
 
 .banner-container {
@@ -227,10 +229,14 @@ main {
     font-size: 1.5rem;
 }
 
-@media (min-width: 360px) and (max-width: 414px) {
+@media ( 360px <= width <= 414px ) {
     
+    .section-home {
+        margin-top: 37%;
+    }
+
     .home-container {
-        margin-left: 4%;
+        margin-left: 5%;
     }
 
     .home-title {
@@ -331,7 +337,7 @@ main {
 }
 
 
-@media (min-width: 768px) and (max-width: 991px) {
+@media ( 768px <= width <= 991px ) {
     
     .section-home {
         background-position-x: -11rem;
@@ -387,7 +393,7 @@ main {
     }
 }
 
-@media (min-width: 992px) and (max-width: 1024px) {
+@media ( 992px <= width <= 1024px ) {
     
     .section-home {
         background-position-x: -11rem;
@@ -441,7 +447,8 @@ main {
     }
 }
 
-@media (min-width: 1600px) and (max-width: 1900px) {
+@media ( 1600px <= width <= 1900px ) {
+    
     .section-home {
         min-height: 50rem;
         background-size: cover;
@@ -449,11 +456,12 @@ main {
     }
 }
 
-@media (min-width: 1901px) {
+@media ( 1901px <= width ) {
+
     .section-home {
         background-position-y: -18rem;
         background-size: cover;
-        min-height: 91dvh;
+        min-height: 116dvh;
     }
 
     .home-container {
@@ -462,5 +470,10 @@ main {
 
     .pantallas-home {
         width: 75rem;
+    }
+
+    .home-cards-container {
+        column-gap: 6rem;
+        row-gap: 3rem;
     }
 }

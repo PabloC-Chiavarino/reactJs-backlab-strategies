@@ -103,7 +103,8 @@
     left: 10px;
 }
 
-@media (min-width: 360px) and (max-width: 414px) {
+@media ( 360px <= width <= 414px) {
+    
     .security-img-container {
         display: none;
     }
@@ -155,7 +156,7 @@
     }
 }
 
-@media (min-width: 768px) and (max-width: 991px) {
+@media ( 768px <= width <= 991px ) {
 
     .security-title {
         width: 95%;
@@ -181,7 +182,7 @@
     }
 }
 
-@media (min-width: 992px) and (max-width: 1024px) {
+@media ( 992px <= width <= 1024px ) {
  
     .chars-container {
         width: 500px;

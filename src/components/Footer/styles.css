@@ -1,5 +1,6 @@
 .section-footer {
     padding: 0 20px;
+    margin-top: 0;
     background-image: url(../../assets/img/contenedor-footer.png);
     background-position: center;
     background-size: cover;
@@ -167,9 +168,9 @@
     }
 
     .section-footer .p-prueba {
-        width: auto;
+        width: 90%;
         right: 0;
-        font-size: 1.3rem;
+        font-size: 1.15rem;
         padding-inline: 1rem;
         line-height: 2.1rem;
     }
@@ -184,6 +185,10 @@
 }
 
 @media ( 768px <= width <=991px) {
+    .section-footer {
+        margin-top: 0;
+    }
+    
     .section-footer .rectangulo {
         width: 95%;
         height: 210px;
@@ -217,7 +222,7 @@
         right: 1.5rem;
     }
 }
-@media (992px <=width <=1024px) {
+@media (992px <= width <=1024px) {
     
     .section-footer .icono-regalo {
         width: 95px;
@@ -239,7 +244,7 @@
     }
 }
 
-@media (1200px <=width <=1365px) {
+@media (1200px <= width <=1365px) {
 
     .section-footer .rectangulo {
         width: 87%;

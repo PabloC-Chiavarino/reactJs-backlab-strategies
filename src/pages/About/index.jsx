@@ -8,7 +8,7 @@ const About = () => {
 
     return (
         <>
-            <section style={{ paddingTop: '4%' }}>
+            <section className="about-us-section" style={{ paddingTop: '4%' }}>
                 <div className='title-container'>
                     <h2 className='title' key={lang}>
                         {lang === 'es' ? 'Sobre Nosotros' : 'About Us'}
@@ -37,7 +37,7 @@ const About = () => {
                     </div>
                 </div>
             </section>
-            <section>
+            <section className="section-team">
                 <div className="titleInfo-about-container" key={lang+5}>
                     <h2 className='title'>
                         {lang === 'es' ? 'Nuestro Equipo' : 'Our Team'}
@@ -49,7 +49,7 @@ const About = () => {
                 <img className='teamImg' src={teamWork} style={{ marginTop: '-30px', marginBottom: '-5px' }} alt="" />
                 <div className='team-container'>
                     <div className='team' style={{ right: '4%' }}>
-                        <img src={team1} alt="" />
+                        <img className='team-img' src={team1} alt="" />
                         <div className='team-data'>
                             <h3 className='team-name'>Juan Casimiro</h3>
                             <h6 key={lang+6}>
@@ -73,7 +73,7 @@ const About = () => {
                         </div>
                     </div>
                     <div className='team' style={{ left: '4%' }}>
-                        <img src={team2} alt="" />
+                        <img className='team-img' src={team2} alt="" />
                         <div className='team-data'>
                             <h3 className='team-name'>Ignacio Tolosa</h3>
                             <h6 key={lang+8}>
