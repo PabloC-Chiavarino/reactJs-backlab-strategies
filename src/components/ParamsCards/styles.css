@@ -122,7 +122,7 @@
   }
 }
 
-@media ( 360px <= width <= 640px ) {
+@media ( 360px <= width <= 480px ) {
 
   .section-customizable {
     background-size: contain;
@@ -148,8 +148,42 @@
   .section-customizable {
     min-height: 160dvh;
   }
+
+  .subtitle-customizable {
+    margin-top: 2rem;
+    font-size: 1.2rem;
+    line-height: 2.2rem;
+  }
 }
 
+@media ( 481px <= width <= 767px ) {
+
+  .section-customizable {
+    min-height: 140dvh;
+  }
+
+  .title-customizable {
+    font-size: 2.5rem;
+  }
+
+  .customizable-card {
+    width: 380px;
+  }
+
+  .customizable-card img {
+    height: auto;
+  }
+
+  .customizable-card-title {
+    bottom: 1.5rem;
+  }
+
+  .customizable-card-text {
+    line-height: 1.7rem;
+    bottom: 3rem;
+
+  }
+}
 @media ( 768px <= width <= 991px ) {
 
   .section-customizable {

@@ -332,8 +332,113 @@ main {
     .banner-container{
         display: none;
     }
+}
 
+@media ( 415px <= width <= 575px ) {
+    
+    .section-home {
+        margin-top: 37%;
+        width: 100dvh;
+        background-size: contain;
+        background-position-y: 0rem;
+        background-position-x: -5rem;
+        min-height: 44rem;
+    }
 
+    .pantallas-home {
+        display: none;
+    }
+
+    .home-container {
+        margin-left: 2%;
+    }
+
+    .home-title {
+        font-size: 3.3rem;
+        line-height: 3.75rem;
+        margin-bottom: 5px;
+        width: 90vw;
+        position: relative;
+    }
+
+    .home-subtitle {
+        font-size: 1.6rem;
+        line-height: 2rem;
+        width: 100vw;
+        position: relative;
+        top: 1.5rem;
+    }
+
+    .home-cards-title {
+        font-size: 2rem;
+    }
+
+    .home-cards-description {
+        font-size: 1.2rem;
+        width: 90vw;
+    }
+
+    .button-container {
+        position: relative;
+        top: 3rem;
+    }
+
+    .green-button, .green-button-calendly {
+        width: 185px;
+        height: 40px;
+        font-size: .9rem !important;
+    }
+    
+    .green-button-calendly {
+        font-size: 0.75rem;
+
+        &::before{
+            top: -109px;
+            left: -170%;
+        }
+
+        &:hover {
+            &::before{
+                left: 0%;
+            }
+        }
+    }
+
+    .home-cards-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        left: 5px;
+    }
+
+    .main-card {
+        width: 320px;
+        height: 395px;
+    }
+
+    .main-card--title {
+        font-size: 1.1rem;
+    }
+
+    .main-card--description {
+        overflow-y: scroll;
+        font-size: 1rem;
+        text-align: center;
+        margin-top: 4.5%;
+        margin-bottom: 1rem;
+    }
+
+    .main-card--icon {
+        width: 110px;
+    }
+
+    .banner-container{
+        display: none;
+    }
+}
+
+@media ( 576px <= width <= 767px ) {
 }
 
 

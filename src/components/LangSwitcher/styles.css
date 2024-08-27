@@ -36,7 +36,7 @@
     }
 }
 
-@media ( 413px <= width <= 767px ) {
+@media ( 414px <= width <= 767px ) {
     
     .lang-toggle-switcher {
         right: .5rem;

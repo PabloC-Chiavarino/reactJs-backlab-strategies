@@ -226,7 +226,7 @@ section {
     }
 }
 
-@media ( 414px <= width <= 767px ) {
+@media ( 414px <= width <= 480px ) {
     
 
     .about-us-section {
@@ -304,6 +304,89 @@ section {
         padding-right: 0;
         padding-inline: 1rem;
         line-height: 1.7rem;
+    }
+}
+
+@media ( 481px <= width <= 767px ) {
+    .about-us-section {
+        margin-top: 12rem;
+        height: 64rem;
+    }
+
+    .about-us-section div h2 {
+        font-size: 2.5rem !important;
+    }
+
+    .cards {
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        top: 20rem;
+    }
+
+    .about-card {
+        width: 75%;
+        height: fit-content;
+    }
+
+    .about-card-text {
+        padding: 0 1.5rem 1.5rem;
+        line-height: 1.7rem;
+        margin-top: 7%;
+    }
+
+    .teamImg {
+        display: none;
+    }
+
+    .section-team {
+        position: relative;
+        margin-bottom: 10rem;
+    }
+
+    .team-container {
+        gap: 2.5rem;
+        height: 90rem;
+    }
+
+    .info {
+        font-size: 22px !important;
+    }
+
+    .team {
+        flex-direction: column;
+        width: 75%;
+        height: 600px;
+        top: 5rem;
+        right: 0 !important;
+        left: 0 !important;
+    }
+
+    .team-name {
+        font-size: 1.3rem;
+    }
+
+    .team-img {
+        width: 60%;
+        margin-bottom: 1rem;
+    }
+
+    .team-data {
+        width: auto;
+        margin-left: 0;
+        align-items: center;
+    }
+
+    .team-detail {
+        width: 20rem;
+        height: 68%;
+        text-align: center;
+        margin-top: .3rem;
+        overflow-y: scroll;
+        font-size: 1rem;
+        padding-right: 0;
+        padding-inline: 1rem;
+        line-height: 1.6rem;
     }
 }
 

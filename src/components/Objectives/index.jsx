@@ -32,7 +32,7 @@ const Objectives = () => {
     }, [])
 
     return (
-        <div className='section-objectivos'>
+        <div className='section-objectives'>
             <img
                 className={isIntersecting ? 'objectives-bg animateGrow' : 'objectives-bg'}
                 ref={backgroundRef}
